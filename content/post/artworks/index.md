@@ -15,9 +15,7 @@ Group exhibition at [Gypsum Gallery](http://gypsumgallery.com/) in Cairo.
 3D-printed sculpture made on Zbrush.
 
 ![Image-00003](gypsum-gallery/image-00003.jpg)
-![Image-00004](gypsum-gallery/image-00004.jpg)
 ![Image-00005](gypsum-gallery/image-00005.jpg)
-![Image-00006](gypsum-gallery/image-00006.jpg)
 
 ### Optimized textures (2015)
 

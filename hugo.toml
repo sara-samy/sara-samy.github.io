@@ -1,10 +1,10 @@
 baseURL = "https://sara-samy.github.io/"
 languageCode = "en-us"
-title = "[SGI] Summer Geometry Initiative - Application"
+title = "WIAS-Masterandinnen-Programm - Application"
 theme = "hugo-theme-texify"
 
 [params]
-description = "an example site for hugo theme TeXify" # website description
+description = "Personal website using hugo with TeXify theme" # website description
 favicon = "favicon.ico" # path to website icon, relative to ./static
 
 customCSS = []            # path to custom css files, relative to ./static

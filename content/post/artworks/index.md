@@ -12,6 +12,11 @@ Group exhibition at [Kestner Gesellschaft](https://kestnergesellschaft.de/) in H
 ![Image-1](hannover/print-1.jpg)
 ![Image-2](hannover/print-2.jpg)
 
+3D-printed sculpture made on Zbrush.
+
+![Image-00003](gypsum-gallery/image-00003.jpg)
+![Image-00005](gypsum-gallery/image-00005.jpg)
+
 ### Profit/Prophet (2014)
 
 Group exhibition at St. Johannes-Evangelist-Kirche for Berlin Art Week 2014.
@@ -25,11 +30,6 @@ Group exhibition at [Gypsum Gallery](http://gypsumgallery.com/) in Cairo.
 ![Image-00000](gypsum-gallery/image-00000.jpg)
 ![Image-00001](gypsum-gallery/image-00001.jpg)
 ![Image-00002](gypsum-gallery/image-00002.jpg)
-
-3D-printed sculpture made on Zbrush.
-
-![Image-00003](gypsum-gallery/image-00003.jpg)
-![Image-00005](gypsum-gallery/image-00005.jpg)
 
 ### Nile Sunset Annex (2014)
 

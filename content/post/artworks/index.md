@@ -4,19 +4,6 @@ date: 2024-02-15T20:51:38+01:00
 draft: false
 ---
 
-### Was tust du, Objekt? (2015)
-
-Group exhibition at [Gypsum Gallery](http://gypsumgallery.com/) in Cairo.
-
-![Image-00000](gypsum-gallery/image-00000.jpg)
-![Image-00001](gypsum-gallery/image-00001.jpg)
-![Image-00002](gypsum-gallery/image-00002.jpg)
-
-3D-printed sculpture made on Zbrush.
-
-![Image-00003](gypsum-gallery/image-00003.jpg)
-![Image-00005](gypsum-gallery/image-00005.jpg)
-
 ### Optimized textures (2015)
 
 Group exhibition at [Kestner Gesellschaft](https://kestnergesellschaft.de/) in Hannover, Germany.
@@ -30,6 +17,19 @@ Group exhibition at [Kestner Gesellschaft](https://kestnergesellschaft.de/) in H
 Group exhibition at St. Johannes-Evangelist-Kirche for Berlin Art Week 2014.
 
 ![Photo-00](PROFITPROPHET.jpg)
+
+### Was tust du, Objekt? (2015)
+
+Group exhibition at [Gypsum Gallery](http://gypsumgallery.com/) in Cairo.
+
+![Image-00000](gypsum-gallery/image-00000.jpg)
+![Image-00001](gypsum-gallery/image-00001.jpg)
+![Image-00002](gypsum-gallery/image-00002.jpg)
+
+3D-printed sculpture made on Zbrush.
+
+![Image-00003](gypsum-gallery/image-00003.jpg)
+![Image-00005](gypsum-gallery/image-00005.jpg)
 
 ### Nile Sunset Annex (2014)
 

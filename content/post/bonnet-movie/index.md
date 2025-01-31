@@ -52,7 +52,7 @@ which can then be used to generate a surface with planar curvature lines:
 
 ## The Bonnet pairs
 
-The Bonnet tori $f_{+}$
+Below are animations of the Bonnet tori $f_{+}$ and $f_{-}$
 
 {{< rawhtml >}}
 <video width=100% controls autoplay>
@@ -60,8 +60,6 @@ The Bonnet tori $f_{+}$
     Your browser does not support the video tag.
 </video>
 {{< /rawhtml >}}
-
-and $f_{-}$
 
 {{< rawhtml >}}
 <video width=100% controls autoplay>

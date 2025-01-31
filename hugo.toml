@@ -1,6 +1,6 @@
 baseURL = "https://sara-samy.github.io/"
 languageCode = "en-us"
-title = "WIAS-Masterandinnen-Programm - Application"
+title = "HHI - Fraunhofer Institute - Application"
 theme = "hugo-theme-texify"
 
 [params]

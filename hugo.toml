@@ -1,21 +1,27 @@
 baseURL = "https://sara-samy.github.io/"
 languageCode = "en-us"
 title = "Blog posts"
-theme = "hugo-theme-texify"
+theme = ["hugo-theme-texify", "plausible-hugo"]
 
 [params]
-description = "Personal website using hugo with TeXify theme" # website description
-favicon = "favicon.ico" # path to website icon, relative to ./static
-
-customCSS = []            # path to custom css files, relative to ./static
-customJS = []             # path to custom js files, relative to ./static
-dateFormat = "2006-01-02" # date format, see https://gohugo.io/functions/format/
-fullTextRSS = true        # output full-text (instead of only summary) rss
-emphasisWithDots = true   # use dots to emphasize chinese texts, see https://zh.wikipedia.org/wiki/%E7%9D%80%E9%87%8D%E5%8F%B7
-since = "2019"            # website created year
-toc = false               # whether to enable table of contents in posts
+description = "Personal website using Hugo with TeXify theme"
+favicon = "favicon.ico"
+customCSS = []
+customJS = []
+dateFormat = "2006-01-02"
+fullTextRSS = true
+emphasisWithDots = true
+since = "2019"
+toc = false
 
 [params.math]
-enable = true # whether to enable math typesetting
-use = "katex"  # katex or mathjax
+enable = true
+use = "katex"
 
+[params.plausible]
+enable = true
+domain = "sara-samy.github.io"
+outbound_link = true
+file_downloads = true
+debug = false
+gitstar = false

@@ -150,6 +150,32 @@ mjx-container[jax="CHTML"][display="true"],
     scrollbar-width: none; */
 }
 
+/* Custom KaTeX font sizing (added manually) */
+
+.katex {
+  font-size: 1.05em;
+  line-height: 1.2;
+}
+
+/* Display math */
+.katex-display {
+  font-size: 1.05em;
+  margin: 0.8em 0;
+  padding-right: 0;
+  overflow: auto hidden;
+}
+
+/* Inline math */
+.katex:not(.katex-display) {
+  font-size: 1.00em;
+  vertical-align: -0.04em;
+}
+
+/* Adjust spacing around operators */
+.katex .mop, .katex .mbin {
+  vertical-align: middle;
+}
+
 
 /* ------------------------------------------------------------------------ */
 /* Styling for margin/side notes. */

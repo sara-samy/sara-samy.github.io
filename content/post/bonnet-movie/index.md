@@ -1,6 +1,7 @@
 ---
 title: "Solving the Bonnet problem - A hands-on adventure in 17 chapters"
 date: 2024-02-15T20:49:43+01:00
+math: true
 draft: false
 ---
 
@@ -10,60 +11,56 @@ This page showcases the animations produced for the movie _Solving the Bonnet pr
 
 Let $f$ denote the parameterization function of the isothermic torus in the animations below. It has one family of planar curvature lines, i.e. the curve $u \mapsto f(u, v_{0})$ lies in a plane for every fixed $v_{0}$.
 
-{{< rawhtml >}}
-
-<video width=100% controls autoplay>
-    <source src="spherical-curvature-lines.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
-{{< /rawhtml >}}
+{{< video
+  src="spherical-curvature-lines.mp4"
+  autoplay="true"
+  loop="true"
+  muted="true"
+>}}
 
 It also has another family of spherical curvature lines, i.e. the curve $v \mapsto f(u_{0}, v)$ lies on a sphere for every fixed $u_{0}$.
 
-{{< rawhtml >}}
-
-<video width=100% controls autoplay>
-    <source src="planar-curvature-lines.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
-{{< /rawhtml >}}
+{{< video
+  src="planar-curvature-lines.mp4"
+  autoplay="true"
+  loop="true"
+  muted="true"
+>}}
 
 ## Darboux's classification of isothermic surfaces with planar curvature lines
 
 A parameter $w_0$ generates a family of curves, e.g. the following curve
 
-{{< rawhtml >}}
-<video width=100% controls autoplay>
-    <source src="Darboux-curve.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-{{< /rawhtml >}}
+{{< video
+  src="Darboux-curve.mp4"
+  autoplay="true"
+  loop="true"
+  muted="true"
+>}}
 
 which can then be used to generate a surface with planar curvature lines:
 
-{{< rawhtml >}}
-<video width=100% controls autoplay>
-    <source src="darboux-surface-buildup.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-{{< /rawhtml >}}
+{{< video
+  src="darboux-surface-buildup.mp4"
+  autoplay="true"
+  loop="true"
+  muted="true"
+>}}
 
 ## The Bonnet pairs
 
 Below are animations of the Bonnet tori $f_{+}$ and $f_{-}$
 
-{{< rawhtml >}}
-<video width=100% controls autoplay>
-    <source src="bg-plus.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-{{< /rawhtml >}}
+{{< video
+  src="bg-plus.mp4"
+  autoplay="true"
+  loop="true"
+  muted="true"
+>}}
 
-{{< rawhtml >}}
-<video width=100% controls autoplay>
-    <source src="bg-minus.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-{{< /rawhtml >}}
+{{< video
+  src="bg-minus.mp4"
+  autoplay="true"
+  loop="true"
+  muted="true"
+>}}

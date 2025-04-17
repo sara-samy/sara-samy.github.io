@@ -1,13 +1,11 @@
 baseURL = "https://sara-samy.github.io/"
 languageCode = "en-us"
-title = "Blog posts"
+title = "sarasamy.github.io"
 theme = ["hugo-tufte", "plausible-hugo"]
 
 [params]
-subtitle = "Fancy subtitle."
+subtitle = "Blog posts"
 math = true
-KaTeXVersion = "0.16.4"
-KaTeXCDN = "//cdn.jsdelivr.net/npm"
 hidedate = false
 showSummary = false
 marginNoteInd = "⊕"
@@ -15,8 +13,8 @@ github = "sara-samy"
 
 [params.plausible]
 enable = true
-domain = "sara-samy.github.io"
-outbound_link = true
-file_downloads = true
 debug = false
 gitstar = false
+outbound_link = true
+file_downloads = true
+domain = "sara-samy.github.io"

@@ -1,0 +1,9 @@
+<div class="proof-container">
+  <div class="proof-toggle" onclick="toggleProof(this)">
+    <span class="arrow">▶</span>
+    <span class="proof-text">Show proof</span>
+  </div>
+  <div class="proof-content">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

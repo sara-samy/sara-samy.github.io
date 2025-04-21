@@ -176,6 +176,28 @@ mjx-container[jax="CHTML"][display="true"],
   vertical-align: middle;
 }
 
+/* ======================================================================== */
+/* THEOREM-SPECIFIC MATH ADJUSTMENTS                                        */
+/* ======================================================================== */
+.theorem-env,
+.proof-content {
+  .katex-display {
+    margin: 1.2em auto;
+    padding: 0.6em 0;
+    width: calc(100% + 2.4rem);
+    transform: translateX(-1.2rem);
+
+    @media (max-width: 760px) {
+      width: calc(100% + 1.2rem);
+      transform: translateX(-0.6rem);
+    }
+  }
+
+  // Inline math in theorems
+  .katex:not(.katex-display) {
+    vertical-align: -0.06em;
+  }
+}
 
 /* ------------------------------------------------------------------------ */
 /* Styling for margin/side notes. */
@@ -298,4 +320,191 @@ p:lang(ja), span:lang(ja), {
 .sidenote:lang(ja),
 .marginnote:lang(ja) {
     font-size: 0.9rem;
+
+/* ======================================================================== */
+/* THEOREM AND PROOF ENVIRONMENTS                                           */
+/* ======================================================================== */
+// Color Definitions
+$theorem-colors: (
+  theorem: #6c71c4,
+  // Purple
+  lemma: #dc322f,
+  // Red
+  definition: #859900,
+  // Green
+  corollary: #b58900,
+  // Gold
+  proposition: #d33682 // Magenta,
+);
+
+.theorem-env {
+  width: 55%;
+  margin: 1.6rem 0 0.2rem 0;
+  padding: 1rem 1.2rem;
+  border-left: 3px solid;
+  background-color: rgba(248, 248, 248, 0.5);
+  font-size: 1.25em;
+  line-height: 1.55;
+  border-radius: 0 3px 3px 0;
+
+  // Type-specific colors
+  @each $type, $color in $theorem-colors {
+    &.#{$type} {
+      border-left-color: $color;
+      .theorem-type {
+        color: $color;
+      }
+    }
+  }
+
+  // Mobile responsiveness
+  @media (max-width: 760px) {
+    width: calc(100% - 2.4rem); // Full width minus padding
+    margin: 1.6rem 0;
+    padding: 1rem 1.2rem;
+    font-size: 1.15em; // Slightly smaller on mobile
+  }
+
+  .theorem-head {
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .theorem-type {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .theorem-label {
+    color: #586e75;
+    margin-left: 0.4rem;
+    font-family: $serif-fonts;
+    font-size: 0.98em;
+  }
+
+  .theorem-title {
+    color: #268bd2;
+    margin-left: 0.4rem;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .theorem-body {
+    p,
+    ul,
+    ol {
+      width: 100% !important;
+      margin: 0.5rem 0;
+      font-size: 1em;
+    }
+  }
 }
+
+.proof-container {
+  width: 55%;
+  margin: 1rem 0 1.8rem 0;
+  font-size: 1em;
+
+  // Mobile responsiveness
+  @media (max-width: 760px) {
+    width: calc(100% - 2.4rem); // Full width minus padding
+    margin: 1.2rem 0 2rem 0;
+  }
+
+  .proof-toggle {
+    cursor: pointer;
+    color: #2aa198;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.2rem 0;
+    font-family: $sans-fonts;
+    font-size: 0.98em;
+    transition: color 0.2s;
+
+    &:hover {
+      color: darken(#2aa198, 10%);
+    }
+  }
+
+  .arrow {
+    font-size: 0.8em;
+    transition: transform 0.2s;
+  }
+
+  .proof-content {
+    display: none;
+    margin-top: 1.6rem;
+    padding-left: 1.2rem;
+    border-left: 1px solid #93a1a1;
+    animation: fadeIn 0.3s ease-out;
+    font-size: 1.25em;
+
+    @media (max-width: 760px) {
+      font-size: 1.15em;
+    }
+
+    p,
+    ul,
+    ol {
+      width: 100% !important;
+      margin: 0.5rem 0;
+    }
+  }
+
+  &.active {
+    .arrow {
+      transform: rotate(90deg);
+    }
+    .proof-content {
+      display: block;
+    }
+  }
+}
+
+/* Centered Math Display */
+.theorem-env,
+.proof-content {
+  .katex-display {
+    display: block !important;
+    margin: 1.2rem auto !important;
+    padding: 0.6rem 0;
+    text-align: center;
+    width: calc(100% + 2.4rem) !important;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transform: translateX(-1.2rem);
+
+    @media (max-width: 760px) {
+      width: calc(100% + 1.2rem) !important;
+      transform: translateX(-0.6rem);
+      padding: 0.5rem 0;
+    }
+
+    > .katex {
+      display: inline-block !important;
+      text-align: center;
+      white-space: nowrap;
+      padding: 0 0.6rem;
+    }
+
+    .base {
+      margin: 0.4rem 0;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

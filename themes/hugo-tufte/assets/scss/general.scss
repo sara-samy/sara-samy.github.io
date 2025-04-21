@@ -141,39 +141,56 @@ table.lntable {
 .katex-display::-webkit-scrollbar {
   display: none;
 }*/
-
+// Container for both MathJax and KaTeX display math
 mjx-container[jax="CHTML"][display="true"],
 .katex-display {
-      overflow: auto;
-      overflow-y: hidden;
-/*     -ms-overflow-style: none;
-    scrollbar-width: none; */
+  display: block !important;
+  text-align: center;
+  max-width: 100%;
+  margin: 0.8em 0;
+  overflow: auto hidden;
+
+  // Scrollbar hiding (commented by default)
+  /* -ms-overflow-style: none; */
+  /* scrollbar-width: none; */
 }
 
-/* Custom KaTeX font sizing (added manually) */
-
+// Base KaTeX styles
 .katex {
+  display: inline-block !important;
+  white-space: nowrap;
+  text-align: center;
   font-size: 1.05em;
   line-height: 1.2;
-}
 
-/* Display math */
-.katex-display {
-  font-size: 1.05em;
-  margin: 0.8em 0;
-  padding-right: 0;
-  overflow: auto hidden;
-}
+  // Display math specific
+  &.katex-display {
+    font-size: 1.05em;
+    padding-right: 0;
 
-/* Inline math */
-.katex:not(.katex-display) {
-  font-size: 1.00em;
-  vertical-align: -0.04em;
-}
+    // Nested elements
+    .katex-html {
+      display: inline-block;
+      text-align: center;
+    }
+  }
 
-/* Adjust spacing around operators */
-.katex .mop, .katex .mbin {
-  vertical-align: middle;
+  // Inline math specific
+  &:not(.katex-display) {
+    font-size: 1em;
+    vertical-align: -0.04em;
+  }
+
+  // Operator spacing
+  .mop,
+  .mbin {
+    vertical-align: middle;
+  }
+
+  // Ensure proper alignment
+  .base {
+    margin: 0.15em 0;
+  }
 }
 
 /* ======================================================================== */

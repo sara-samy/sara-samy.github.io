@@ -1,0 +1,29 @@
+title: "Blog posts"
+languageCode: "en-us"
+theme: ["hugo-tufte", "plausible-hugo"]
+baseurl: "https://sara-samy.github.io/"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    guessSyntax: true
+
+params:
+  subtitle: "Blog posts"
+  math: true
+  codeblocksdark: false
+  marginNoteInd: "⊕"
+  showSummary: false
+  hidedate: false
+  github: "sara-samy"
+
+  plausible:
+    enable: true
+    debug: false
+    gitstar: false
+    outbound_link: true
+    file_downloads: true
+    domain: "sara-samy.github.io"

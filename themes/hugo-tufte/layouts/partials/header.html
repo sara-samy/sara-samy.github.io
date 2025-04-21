@@ -5,29 +5,13 @@
 <meta name="description"
     content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }} ">
 <link rel="canonical" href="{{ .Permalink }}" />
+
 <!-- favicon -->
 <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
-<!-- proof toggle -->
-<script>
-  function toggleProof(element) {
-    const container = element.closest('.proof-container');
-    const proofContent = element.querySelector('.proof-content') || element.nextElementSibling;
-    const proofText = element.querySelector('.proof-text');
 
-    container.classList.toggle('active');
-    const isActive = container.classList.contains('active');
-
-    proofContent.style.display = isActive ? 'block' : 'none';
-    proofText.textContent = isActive ? 'Hide proof' : 'Show proof';
-
-    // Rotate arrow
-    const arrow = element.querySelector('.arrow');
-    arrow.style.transform = isActive ? 'rotate(90deg)' : 'rotate(0)';
-  }
-</script>
 {{ partial "header.includes.html" . }}
 </head>

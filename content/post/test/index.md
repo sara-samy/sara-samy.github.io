@@ -4,6 +4,11 @@ date: 2025-03-26
 draft: false
 math: true
 ---
+
+
+## Lines on Torus
+### Spherical lines of isothermic Torus
+
 look there.{{< sidenote >}}This is a sidenote.{{< /sidenote >}}
 you could also want a margin note.{{< marginnote ind="⊕" >}}This is a margin note. Notice there isn’t a number preceding the note.{{< /marginnote >}}
 {{< figure
@@ -50,3 +55,23 @@ $$
 with $\lambda_{2} > 0$ and $\lambda_{n} = n$ iff $G$ is connected.
 If $G$ has $r$ connected components then $\lambda_{1} = \dots = \lambda_{r} = 0$, i.e. the multiplicity of the zero eigenvalue counts the number of connected components of $G$.
 {{< /theorem >}}
+
+```Clojure
+;; Some code examples in Clojure. This is a comment.
+
+;; applying a function to every item in the collection
+(map tufte-css blog-posts)
+;;;; if unfamiliar, see http://www.lispcast.com/annotated-map
+
+;; side-effecty loop (unformatted, causing text overflow) - from https://clojuredocs.org/clojure.core/doseq
+(doseq [[[a b] [c d]] (map list (sorted-map :1 1 :2 2) (sorted-map :3 3 :4 4))] (prn (* b d)))
+
+;; that same side-effecty loop, formatted
+(doseq [[[a b] [c d]] (map list
+                           (sorted-map :1 1 :2 2)
+                           (sorted-map :3 3 :4 4))]
+  (prn (* b d)))
+
+;; If this proselytizing has worked, check out:
+;; http://howistart.org/posts/clojure/1
+```

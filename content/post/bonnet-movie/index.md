@@ -12,19 +12,19 @@ This page showcases the animations produced for the movie _Solving the Bonnet pr
 Let $f$ denote the parameterization function of the isothermic torus in the animations below. It has one family of planar curvature lines, i.e. the curve $u \mapsto f(u, v_{0})$ lies in a plane for every fixed $v_{0}$.
 
 {{< video
-  src="spherical-curvature-lines.mp4"
-  autoplay="true"
-  loop="true"
-  muted="true"
+src="spherical-curvature-lines.mp4"
+autoplay="true"
+loop="true"
+muted="true"
 >}}
 
 It also has another family of spherical curvature lines, i.e. the curve $v \mapsto f(u_{0}, v)$ lies on a sphere for every fixed $u_{0}$.
 
 {{< video
-  src="planar-curvature-lines.mp4"
-  autoplay="true"
-  loop="true"
-  muted="true"
+src="planar-curvature-lines.mp4"
+autoplay="true"
+loop="true"
+muted="true"
 >}}
 
 ## Darboux's classification of isothermic surfaces with planar curvature lines
@@ -32,19 +32,19 @@ It also has another family of spherical curvature lines, i.e. the curve $v \maps
 A parameter $w_0$ generates a family of curves, e.g. the following curve
 
 {{< video
-  src="Darboux-curve.mp4"
-  autoplay="true"
-  loop="true"
-  muted="true"
+src="Darboux-curve.mp4"
+autoplay="true"
+loop="true"
+muted="true"
 >}}
 
 which can then be used to generate a surface with planar curvature lines:
 
 {{< video
-  src="darboux-surface-buildup.mp4"
-  autoplay="true"
-  loop="true"
-  muted="true"
+src="darboux-surface-buildup.mp4"
+autoplay="true"
+loop="true"
+muted="true"
 >}}
 
 ## The Bonnet pairs
@@ -52,15 +52,15 @@ which can then be used to generate a surface with planar curvature lines:
 Below are animations of the Bonnet tori $f_{+}$ and $f_{-}$
 
 {{< video
-  src="bg-plus.mp4"
-  autoplay="true"
-  loop="true"
-  muted="true"
+src="bg-plus.mp4"
+autoplay="true"
+loop="true"
+muted="true"
 >}}
 
 {{< video
-  src="bg-minus.mp4"
-  autoplay="true"
-  loop="true"
-  muted="true"
+src="bg-minus.mp4"
+autoplay="true"
+loop="true"
+muted="true"
 >}}

@@ -18,7 +18,6 @@ params:
   marginNoteInd: "⊕"
   showSummary: false
   hidedate: false
-  github: "sara-samy"
 
   plausible:
     enable: true

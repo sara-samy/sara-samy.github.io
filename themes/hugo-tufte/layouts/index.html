@@ -9,7 +9,8 @@
 <section class="page-list">
 {{ $pgFilter1 := where .Site.RegularPages "Draft" false }}
 {{ $pgFilter2 := where .Site.RegularPages "Params.date" "!=" nil }}
-{{ $pgFilter := $pgFilter1 | intersect $pgFilter2 }}
+{{ $pgFilter3 := where .Site.RegularPages "Params.excludeFromListings" "!=" true }}
+{{ $pgFilter := $pgFilter1 | intersect $pgFilter2 | intersect $pgFilter3 }}
 {{ range (.Paginate $pgFilter).Pages }}
   <h2 class="content-title">
   {{ if .IsNode }}

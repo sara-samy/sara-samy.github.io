@@ -2,6 +2,7 @@ title: "Blog posts"
 languageCode: "en-us"
 theme: ["hugo-tufte", "plausible-hugo"]
 baseurl: "https://sara-samy.github.io/"
+title: "sara-samy.github.io"
 
 markup:
   goldmark:

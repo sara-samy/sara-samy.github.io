@@ -529,3 +529,105 @@ $theorem-colors: (
   }
 }
 
+/* ======================================================================== */
+/* ABOUT PAGE LINK                                                          */
+/* ======================================================================== */
+.site-header {
+  position: relative;
+  margin-bottom: 0rem;
+  margin-top: 1.8rem;
+  margin-left: 0rem;
+  width: 100%;
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem 0;
+    gap: 2rem; //top gap between header and about
+
+    .head-title {
+      font-size: 2.3rem;
+      font-family: $serif-fonts;
+      font-style: italic;
+      font-weight: bold;
+      color: #111;
+      text-decoration: none;
+      width: fit-content;
+
+      .cursor {
+        animation: blink 1s step-end infinite;
+        font-weight: bold;
+        color: var(--link-color);
+      }
+    }
+
+    .header-nav {
+      .home-link {
+        font-family: $serif-fonts;
+        font-style: italic;
+        font-size: 1.2rem;
+        color: #555;
+        text-decoration: none;
+        width: fit-content;
+        display: block;
+
+        &:hover {
+          color: #268bd2;
+        }
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+
+        .nav-link {
+          font-family: $serif-fonts;
+          font-style: italic;
+          font-size: 1.2rem;
+          color: #555;
+          text-decoration: none;
+          transition: color 0.2s ease;
+
+          &:hover {
+            color: #268bd2;
+          }
+
+          &.github-link {
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        .nav-divider {
+          color: #ddd;
+          user-select: none;
+        }
+
+        .github-icon {
+          width: 1.2rem;
+          height: 1.2rem;
+          margin-top: -0.1rem;
+        }
+      }
+    }
+  }
+
+  .header-divider {
+    border: none;
+    height: 1px;
+    background-color: #eee;
+    margin: 0.5rem 0 0;
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+

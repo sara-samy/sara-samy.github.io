@@ -1,17 +1,5 @@
 <footer class="page-footer">
 
-<div class="previous-post" style="display:inline-block;">
-  {{ if .Prev }}
-  <a class="link-reverse" href="{{ .Prev.Permalink }}?ref=footer">« {{ .Prev.Title | truncate 50 "..."}}</a>
-  {{ end }}
-</div>
-
-<div class="next-post", style="display:inline-block;float:right;">
-  {{ if .Next }}
-  <a class="link-reverse" href="{{ .Next.Permalink }}?ref=footer">{{ .Next.Title | truncate 50 "..." }} »</a>
-  {{ end }}
-</div>
-
 <ul class="page-footer-menu">
   {{/* SOCIALS */}}
   {{ if isset .Site.Params "twitter" }}

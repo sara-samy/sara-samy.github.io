@@ -4,16 +4,8 @@ theme: ["hugo-tufte", "plausible-hugo"]
 baseurl: "https://sara-samy.github.io/"
 title: "sara-samy.github.io"
 
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-  highlight:
-    noClasses: false
-    guessSyntax: true
-
 params:
-  subtitle: "Blog posts"
+  subtitle: "Notes"
   math: true
   codeblocksdark: false
   marginNoteInd: "⊕"
@@ -27,3 +19,16 @@ params:
     outbound_link: true
     file_downloads: true
     domain: "sara-samy.github.io"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    guessSyntax: true
+
+ignoreFiles:
+  - \.obsidian/.*
+  - content/_obsidian-templates/.*
+

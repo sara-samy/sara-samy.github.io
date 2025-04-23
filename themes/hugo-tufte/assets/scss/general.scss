@@ -355,7 +355,7 @@ $theorem-colors: (
   // Green
   corollary: #b58900,
   // Gold
-  proposition: #d33682 // Magenta,,
+  proposition: #d33682 // Magenta,,,
 );
 
 .theorem-env {
@@ -628,6 +628,33 @@ $theorem-colors: (
   }
   50% {
     opacity: 0;
+  }
+}
+
+/* ======================================================================== */
+/* BLOG POSTS SUBTITLE                                                      */
+/* ======================================================================== */
+
+.blog-posts-header {
+  margin: 0rem 0 0.25rem;
+  width: 55%; // Match Tufte's content width
+
+  .blog-subtitle {
+    font-family: $serif-fonts;
+    font-style: italic;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #111;
+    margin: 0;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #eee; // Subtle underline
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 760px) {
+  .blog-posts-header {
+    width: 90%; // Match mobile content width
   }
 }
 

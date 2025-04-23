@@ -1,0 +1,163 @@
+/*===========Theorem callout enviroment============*/
+
+.theorem-callout {
+  --callout-color: var(--text-normal);
+  font-family: Spectral;
+  background-color: rgb(0, 0, 0, 0);
+  border: solid;
+  border-radius: 6px;
+}
+
+.theorem-callout .callout-title-inner {
+  font-style: bold;
+}
+
+.theorem-callout-subtitle {
+  font-weight: 400;
+}
+
+.theorem-callout-en .callout-content {
+  font-style: normal;
+}
+
+/*===========Example callout enviroment============*/
+
+.theorem-callout-example {
+  --callout-color: 238, 15, 149;
+  border-top: none;
+  border-bottom: none;
+  border-left: var(--size-2-2) solid rgb(var(--callout-color));
+  border-right: none;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 0px;
+  font-family: Spectral;
+}
+
+.theorem-callout-example .callout-title {
+  padding: var(--size-2-3);
+  padding-left: var(--size-4-3);
+}
+
+.theorem-callout-example .callout-title-inner {
+  font-family: Spectral;
+  font-weight: 600;
+  font-style: italic;
+  color: rgb(var(--callout-color));
+}
+
+.theorem-callout-example .callout-content {
+  background-color: var(--background-primary);
+  padding: 1px 20px 2px 20px;
+}
+
+/*===========Remark callout enviroment============*/
+
+.theorem-callout-remark {
+  --callout-color: 238, 15, 149;
+  border-top: none;
+  border-bottom: none;
+  border-left: var(--size-2-2) solid rgb(var(--callout-color));
+  border-right: none;
+  border-radius: 0px;
+  box-shadow: none;
+  padding: 0px;
+  font-family: Spectral;
+}
+
+.theorem-callout-remark .callout-title {
+  padding: var(--size-2-3);
+  padding-left: var(--size-4-3);
+}
+
+.theorem-callout-remark .callout-title-inner {
+  font-family: Spectral;
+  font-weight: 600;
+  font-style: italic;
+  color: rgb(var(--callout-color));
+}
+
+.theorem-callout-remark .callout-content {
+  background-color: var(--background-primary);
+  padding: 1px 20px 2px 20px;
+}
+
+/*===========Set callout icons============*/
+
+/* Keep theorem-callout at the start */
+.theorem-callout {
+  /* Font Awesome: magic */
+  --callout-icon: '<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magic" class="svg-inline--fa fa-magic fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M224 96l16-32 32-16-32-16-16-32-16 32-32 16 32 16 16 32zM80 160l26.66-53.33L160 80l-53.34-26.67L80 0 53.34 53.33 0 80l53.34 26.67L80 160zm352 128l-26.66 53.33L352 368l53.34 26.67L432 448l26.66-53.33L512 368l-53.34-26.67L432 288zm70.62-193.77L417.77 9.38C411.53 3.12 403.34 0 395.15 0c-8.19 0-16.38 3.12-22.63 9.38L9.38 372.52c-12.5 12.5-12.5 32.76 0 45.25l84.85 84.85c6.25 6.25 14.44 9.37 22.62 9.37 8.19 0 16.38-3.12 22.63-9.37l363.14-363.15c12.5-12.48 12.5-32.75 0-45.24zM359.45 203.46l-50.91-50.91 86.6-86.6 50.91 50.91-86.6 86.6z"></path></svg>';
+}
+
+.theorem-callout-definition {
+  /* Font Awesome: vertical dashes */
+  --callout-icon: '<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magic" class="svg-inline--fa fa-magic fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V448c0 17.7 14.3 32 32 32s32-14.3 32-32V64zm128 0c0-17.7-14.3-32-32-32s-32 14.3-32 32V448c0 17.7 14.3 32 32 32s32-14.3 32-32V64z"></path></svg>';
+}
+
+.theorem-callout-exercise {
+  /* Font Awesome: question mark */
+  --callout-icon: '<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="question" class="svg-inline--fa fa-question fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"></path></svg>';
+}
+
+.theorem-callout-axiom .callout-icon {
+  display: none;
+}
+
+.theorem-callout-lemma .callout-icon {
+  display: none;
+}
+
+.theorem-callout-claim .callout-icon {
+  display: none;
+}
+
+.theorem-callout-remark .callout-icon {
+  display: none;
+}
+
+.theorem-callout-corollary .callout-icon {
+  display: none;
+}
+
+.theorem-callout-assumption .callout-icon {
+  display: none;
+}
+
+.theorem-callout-conjecture .callout-icon {
+  display: none;
+}
+
+.theorem-callout-hypothesis .callout-icon {
+  display: none;
+}
+
+.theorem-callout-proposition .callout-icon {
+  display: none;
+}
+
+.theorem-callout-example .callout-icon {
+  display: none;
+}
+
+/*===========Proof enviroment============*/
+
+.math-booster-begin-proof {
+  padding-right: 10px;
+  font-family: CMU Serif, Times, Noto Serif JP;
+  font-weight: bold;
+  font-style: italic;
+  color: #ea5555;
+}
+
+.math-booster-end-proof {
+  float: right;
+  margin-bottom: 1em; /* Adds space below the element */
+}
+
+/* For preview mode */
+.markdown-preview-view .math-booster-end-proof {
+  float: right;
+  margin-bottom: 1em;
+}
+

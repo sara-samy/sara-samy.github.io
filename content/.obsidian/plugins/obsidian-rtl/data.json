@@ -1,0 +1,17 @@
+{
+  "fileDirections": {
+    "days/readings/overview.md": "auto",
+    "days/readings/books/the-horizons-of-being.md": "rtl",
+    "days/side-notes/2024-05-08.md": "rtl",
+    "days/side-notes/2024-11-13.md": "rtl",
+    "days/side-notes/2024-11-04.md": "rtl",
+    "days/side-notes/2023-12-05.md": "auto",
+    "days/readings/weeks/2024/2024-06-24.md": "ltr",
+    "days/readings/weeks/2024/2024-12-02.md": "rtl"
+  },
+  "defaultDirection": "ltr",
+  "rememberPerFile": true,
+  "setNoteTitleDirection": true,
+  "setYamlDirection": false,
+  "statusBar": true
+}

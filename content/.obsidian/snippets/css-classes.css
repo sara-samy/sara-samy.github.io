@@ -1,0 +1,131 @@
+.dev {
+  font-family: IosevkaTerm Nerd Font, Cairo;
+  font-size: 85% !important;
+  --h1-font: IosevkaTerm Nerd Font, Cairo;
+  --h2-font: IosevkaTerm Nerd Font, Cairo;
+  --h3-font: IosevkaTerm Nerd Font, Cairo;
+  --h4-font: IosevkaTerm Nerd Font, Cairo;
+  --h5-font: IosevkaTerm Nerd Font, Cairo;
+  --h6-font: IosevkaTerm Nerd Font, Cairo;
+}
+
+.dev.markdown-source-view {
+  font-family: IosevkaTerm Nerd Font, Cairo;
+  font-size: 85% !important;
+  --h1-font: IosevkaTerm Nerd Font, Cairo;
+  --h2-font: IosevkaTerm Nerd Font, Cairo;
+  --h3-font: IosevkaTerm Nerd Font, Cairo;
+  --h4-font: IosevkaTerm Nerd Font, Cairo;
+  --h5-font: IosevkaTerm Nerd Font, Cairo;
+  --h6-font: IosevkaTerm Nerd Font, Cairo;
+}
+
+.handwritten {
+  font-family: "Caveat", "(A) Arslan Wessam A";
+  font-size: 26px;
+  --h1-font: "Caveat", "(A) Arslan Wessam A";
+  --h2-font: "Caveat", "(A) Arslan Wessam A";
+  --h3-font: "Caveat", "(A) Arslan Wessam A";
+  --h4-font: "Caveat", "(A) Arslan Wessam A";
+  --h5-font: "Caveat", "(A) Arslan Wessam A";
+  --h6-font: "Caveat", "(A) Arslan Wessam A";
+}
+
+.handwritten.markdown-source-view {
+  font-family: "Caveat", "(A) Arslan Wessam A";
+  font-size: 26px;
+  --h1-font: "Caveat", "(A) Arslan Wessam A";
+  --h2-font: "Caveat", "(A) Arslan Wessam A";
+  --h3-font: "Caveat", "(A) Arslan Wessam A";
+  --h4-font: "Caveat", "(A) Arslan Wessam A";
+  --h5-font: "Caveat", "(A) Arslan Wessam A";
+  --h6-font: "Caveat", "(A) Arslan Wessam A";
+}
+
+.readings {
+  font-family: Fantasque Sans Mono, Cairo;
+  font-size: 85% !important;
+  --h1-font: Fantasque Sans Mono, Cairo;
+  --h2-font: Fantasque Sans Mono, Cairo;
+  --h3-font: Fantasque Sans Mono, Cairo;
+  --h4-font: Fantasque Sans Mono, Cairo;
+  --h5-font: Fantasque Sans Mono, Cairo;
+  --h6-font: Fantasque Sans Mono, Cairo;
+}
+
+.readings.markdown-source-view {
+  font-family: Fantasque Sans Mono, Cairo;
+  font-size: 85% !important;
+  --h1-font: Fantasque Sans Mono, Cairo;
+  --h2-font: Fantasque Sans Mono, Cairo;
+  --h3-font: Fantasque Sans Mono, Cairo;
+  --h4-font: Fantasque Sans Mono, Cairo;
+  --h5-font: Fantasque Sans Mono, Cairo;
+  --h6-font: Fantasque Sans Mono, Cairo;
+}
+
+.leaf {
+  font-family: Fantasque Sans Mono, Cairo;
+  font-size: 85% !important;
+  --h1-font: Fantasque Sans Mono, Cairo;
+  --h2-font: Fantasque Sans Mono, Cairo;
+  --h3-font: Fantasque Sans Mono, Cairo;
+  --h4-font: Fantasque Sans Mono, Cairo;
+  --h5-font: Fantasque Sans Mono, Cairo;
+  --h6-font: Fantasque Sans Mono, Cairo;
+}
+
+.leaf.markdown-source-view {
+  font-family: Fantasque Sans Mono, Cairo;
+  font-size: 85% !important;
+  --h1-font: Fantasque Sans Mono, Cairo;
+  --h2-font: Fantasque Sans Mono, Cairo;
+  --h3-font: Fantasque Sans Mono, Cairo;
+  --h4-font: Fantasque Sans Mono, Cairo;
+  --h5-font: Fantasque Sans Mono, Cairo;
+  --h6-font: Fantasque Sans Mono, Cairo;
+}
+
+.arabic-text {
+  font-family: Spectral, "Mishafi";
+  font-size: 35px !important;
+  --h1-font: Spectral, "Mishafi";
+  --h2-font: Spectral, "Mishafi";
+  --h3-font: Spectral, "Mishafi";
+  --h4-font: Spectral, "Mishafi";
+  --h5-font: Spectral, "Mishafi";
+  --h6-font: Spectral, "Mishafi";
+}
+
+.arabic-text.markdown-source-view {
+  font-family: Spectral, "Mishafi";
+  font-size: 35px !important;
+  --h1-font: Spectral, "Mishafi";
+  --h2-font: Spectral, "Mishafi";
+  --h3-font: Spectral, "Mishafi";
+  --h4-font: Spectral, "Mishafi";
+  --h5-font: Spectral, "Mishafi";
+  --h6-font: Spectral, "Mishafi";
+}
+
+.farisi-text {
+  font-family: Spectral, "IranNastaliq";
+  font-size: 30px;
+  --h1-font: Spectral, "IranNastaliq";
+  --h2-font: Spectral, "IranNastaliq";
+  --h3-font: Spectral, "IranNastaliq";
+  --h4-font: Spectral, "IranNastaliq";
+  --h5-font: Spectral, "IranNastaliq";
+  --h6-font: Spectral, "IranNastaliq";
+}
+
+.farisi-text.markdown-source-view {
+  font-family: Spectral, "IranNastaliq";
+  font-size: 30px;
+  --h1-font: Spectral, "IranNastaliq";
+  --h2-font: Spectral, "IranNastaliq";
+  --h3-font: Spectral, "IranNastaliq";
+  --h4-font: Spectral, "IranNastaliq";
+  --h5-font: Spectral, "IranNastaliq";
+  --h6-font: Spectral, "IranNastaliq";
+}

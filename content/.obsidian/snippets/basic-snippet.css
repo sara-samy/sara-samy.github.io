@@ -1,0 +1,120 @@
+/*============Link Pop-up===============*/
+/* Preview Mode */
+.popover.hover-popover {
+  transform: scale(0.8);
+  max-height: 800px; /* was 300 */
+  min-height: 100px;
+  width: 500px; /* was 400 */
+}
+.popover.hover-popover .markdown-embed {
+  height: 800px;
+}
+/*===Remove icon from next hyperlinks===*/
+.external-link {
+  background-image: none;
+  padding-right: 0px;
+}
+.markdown-preview-view a[href*="zotero:"] {
+  background-position: center right;
+  background-repeat: no-repeat;
+  /* Generate using yoksel.github.io/url-encoder */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512' version='1.1'%3E%3Cpath d='M 159.659 115.054 C 155.294 118.487, 154.830 122.285, 155.178 151.729 L 155.500 178.958 158.272 181.729 L 161.044 184.500 201.955 185 L 242.866 185.500 197.048 264.298 C 171.849 307.637, 150.954 344.481, 150.615 346.173 C 149.596 351.271, 149.935 387.225, 151.040 391.205 C 151.606 393.242, 153.239 395.829, 154.669 396.955 C 157.226 398.966, 158.317 399, 219.885 398.996 C 294.203 398.991, 297.173 398.707, 319.680 389.437 C 334.491 383.337, 346.865 374.593, 355.631 364.033 C 360.257 358.460, 361 356.980, 361 353.336 C 361 349.324, 360.109 348.042, 343.609 328.304 C 334.044 316.862, 325.222 306.600, 324.004 305.500 C 322.518 304.158, 320.427 303.513, 317.645 303.539 C 314.199 303.572, 312.320 304.484, 306.500 308.950 C 293.158 319.188, 281.432 322.952, 262.789 322.983 L 252.078 323 279.700 277.250 C 294.892 252.087, 316.812 215.750, 328.411 196.500 L 349.500 161.500 349.500 140.168 L 349.500 118.836 346.234 115.918 L 342.968 113 252.619 113 C 162.997 113, 162.249 113.017, 159.659 115.054 M 166 148.990 L 166 174.981 213.317 175.240 L 260.633 175.500 210.850 261 L 161.067 346.500 161.034 367.750 L 161 389 219.750 388.994 C 283.557 388.988, 289.672 388.594, 306.004 383.443 C 322.221 378.329, 336.442 369.768, 345.884 359.437 C 350.468 354.421, 350.927 353.535, 349.790 351.911 C 346.814 347.663, 318.439 314.124, 317.770 314.065 C 317.369 314.029, 314.669 315.821, 311.770 318.047 C 304.350 323.745, 291.494 329.796, 283.085 331.549 C 277.773 332.657, 270.577 332.970, 255.058 332.770 L 234.179 332.500 286.589 245.555 L 339 158.611 339 140.805 L 339 123 252.500 123 L 166 123 166 148.990' stroke='none' fill='%237d1424' fill-rule='evenodd'/%3E%3Cpath d='M 166 148.990 L 166 174.981 213.317 175.240 L 260.633 175.500 210.850 261 L 161.067 346.500 161.034 367.750 L 161 389 219.750 388.994 C 283.557 388.988, 289.672 388.594, 306.004 383.443 C 322.221 378.329, 336.442 369.768, 345.884 359.437 C 350.468 354.421, 350.927 353.535, 349.790 351.911 C 346.814 347.663, 318.439 314.124, 317.770 314.065 C 317.369 314.029, 314.669 315.821, 311.770 318.047 C 304.350 323.745, 291.494 329.796, 283.085 331.549 C 277.773 332.657, 270.577 332.970, 255.058 332.770 L 234.179 332.500 286.589 245.555 L 339 158.611 339 140.805 L 339 123 252.500 123 L 166 123 166 148.990' stroke='none' fill='%23fb334b' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-size: 14px;
+  background-size: 14px;
+  padding-right: 17px;
+  padding-bottom: 3px;
+}
+
+/*============Arabic Font===============*/
+/* Sets arabic font used by default */
+.font-face {
+  font-family: Cairo;
+  unicode-range: U+0600 –06FF;
+}
+
+/*============Code Style================*/
+/* Preview Mode */
+.markdown-preview-view code {
+  border: none;
+  padding: 0;
+}
+
+/* Reading mode */
+.markdown-rendered pre code {
+  border: none;
+  padding: 0;
+}
+
+/*===========Italics & Bold=============*/
+.cm-em,
+em {
+  font-size: 105% !important;
+}
+
+.cm-strong,
+strong {
+  font-size: 100% !important;
+}
+
+/*============Highlights================*/
+/* Edit Mode */
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
+  background-color: #F4CA5C;
+  color: #b0293a;
+}
+
+/* Preview Mode */
+.markdown-preview-view mark {
+  background-color: #F4CA5C;
+  color: #b0293a;
+}
+
+/*================Latex=================*/
+.markdown-rendered .block-language-tikz svg {
+  zoom: 2;
+}
+
+/*=========Horizontal rule==============*/
+/* Source Mode */
+.markdown-source-view hr,
+/* Preview Mode */
+.markdown-preview-view hr {
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    var(--background-primary),
+    #354d7d,
+    #729eb9,
+    #a4bfe9,
+    #a4bfe9,
+    #729eb9,
+    #354d7d,
+    var(--background-primary)
+  );
+}
+
+/*===========Video Resize===============*/
+[alt~="vid-40"] video {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[alt~="vid-60"] video {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[alt~="vid-80"] video {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

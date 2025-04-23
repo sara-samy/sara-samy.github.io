@@ -1,0 +1,21 @@
+{
+  "accentColor": "#7e748b",
+  "cssTheme": "Minimal",
+  "enabledCssSnippets": [
+    "image-alignment",
+    "minimal-theme-cards",
+    "tasks",
+    "academic-pdf-export",
+    "css-snippet",
+    "math-booster",
+    "zotero-import",
+    "basic-snippet",
+    "css-classes"
+  ],
+  "theme": "moonstone",
+  "textFontFamily": "Spectral,Cairo,(A) Arslan Wessam A,Caveat,IranNastaliq,Mishafi",
+  "baseFontSize": 20,
+  "baseFontSizeAction": false,
+  "interfaceFontFamily": "JetBrainsMono Nerd Font,Iosevka Nerd Font",
+  "monospaceFontFamily": "IosevkaTerm Nerd Font,mononoki Nerd Font"
+}

@@ -1,0 +1,26 @@
+{
+  "statusBar": [
+    {
+      "prefix": "",
+      "suffix": " pages 📜",
+      "metric": {
+        "type": 0,
+        "counter": 5
+      }
+    }
+  ],
+  "altBar": [
+    {
+      "prefix": "",
+      "suffix": " files in vault 🌿",
+      "metric": {
+        "type": 2,
+        "counter": 6
+      }
+    }
+  ],
+  "countComments": false,
+  "collectStats": true,
+  "displaySectionCounts": false,
+  "pageWords": 300
+}

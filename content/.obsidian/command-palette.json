@@ -1,0 +1,7 @@
+{
+  "pinned": [
+    "math-booster:insert-theorem-callout",
+    "obsidian-linter:lint-file",
+    "obsidian-languagetool-plugin:ltcheck-text"
+  ]
+}

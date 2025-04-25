@@ -1,17 +1,41 @@
 [
   {
-    "fileName": "home",
-    "relativePath": "home.md",
+    "fileName": "index.md",
+    "relativePath": "post/Geršgorin-and-his-circles/index.md.md",
     "frontmatter": {
-      "title": "About",
-      "date": "2025-04-21",
+      "title": "Geršgorin and his circles",
+      "date": "2025-04-25",
       "draft": false,
-      "excludeFromListings": true
+      "math": true
+    }
+  },
+  {
+    "fileName": "index",
+    "relativePath": "post/hyperbolic-number-theory/index.md",
+    "frontmatter": {
+      "title": "Hyperbolic geometry and number theory",
+      "date": "2025-04-25",
+      "draft": false,
+      "math": true
+    }
+  },
+  {
+    "fileName": "index",
+    "relativePath": "post/discrete-laplacian/index.md",
+    "frontmatter": {
+      "title": "The discrete Laplacian",
+      "date": "2025-03-26",
+      "draft": false,
+      "math": true
     },
-    "links": [
+    "headings": [
       {
-        "link": "",
-        "displayText": "My Blog Posts"
+        "heading": "Graph Laplacian",
+        "level": 2
+      },
+      {
+        "heading": "Cotangent Laplacian",
+        "level": 2
       }
     ]
   },
@@ -41,32 +65,12 @@
   },
   {
     "fileName": "index",
-    "relativePath": "post/test/index.md",
-    "frontmatter": {
-      "title": "margin test",
-      "date": "2025-03-26",
-      "draft": false,
-      "math": true
-    },
-    "headings": [
-      {
-        "heading": "Lines on Torus",
-        "level": 2
-      },
-      {
-        "heading": "Spherical lines of isothermic Torus",
-        "level": 3
-      }
-    ]
-  },
-  {
-    "fileName": "index",
     "relativePath": "post/artworks/index.md",
     "frontmatter": {
       "title": "Artworks (2009-2015)",
       "date": "2024-02-15T20:51:38+01:00",
       "draft": false,
-      "excludeFromListings": false
+      "excludeFromListings": true
     },
     "headings": [
       {
@@ -100,8 +104,20 @@
     ]
   },
   {
-    "fileName": "proof",
-    "relativePath": "_obsidian-templates/proof.md"
+    "fileName": "home",
+    "relativePath": "home.md",
+    "frontmatter": {
+      "title": "About",
+      "date": "2025-04-21",
+      "draft": false,
+      "excludeFromListings": true
+    },
+    "headings": [
+      {
+        "heading": "Other stuff:",
+        "level": 2
+      }
+    ]
   },
   {
     "fileName": "theorem",
@@ -112,12 +128,8 @@
     "relativePath": "_obsidian-templates/side-note.md"
   },
   {
-    "fileName": "figure",
-    "relativePath": "_obsidian-templates/figure.md"
-  },
-  {
-    "fileName": "and-and-and",
-    "relativePath": "_obsidian-templates/and-and-and.md"
+    "fileName": "proof",
+    "relativePath": "_obsidian-templates/proof.md"
   },
   {
     "fileName": "margin-note",
@@ -134,7 +146,15 @@
     }
   },
   {
+    "fileName": "figure",
+    "relativePath": "_obsidian-templates/figure.md"
+  },
+  {
     "fileName": "bismallah",
     "relativePath": "_obsidian-templates/bismallah.md"
+  },
+  {
+    "fileName": "and-and-and",
+    "relativePath": "_obsidian-templates/and-and-and.md"
   }
 ]

@@ -17,16 +17,20 @@
       "relativePath": "post/artworks"
     },
     {
-      "name": "test",
-      "relativePath": "post/test"
+      "name": "bonnet-movie",
+      "relativePath": "post/bonnet-movie"
+    },
+    {
+      "name": "discrete-laplacian",
+      "relativePath": "post/discrete-laplacian"
+    },
+    {
+      "name": "hyperbolic-number-theory",
+      "relativePath": "post/hyperbolic-number-theory"
     },
     {
       "name": "gypsum-gallery",
       "relativePath": "post/artworks/gypsum-gallery"
-    },
-    {
-      "name": "bonnet-movie",
-      "relativePath": "post/bonnet-movie"
     },
     {
       "name": "hannover",
@@ -43,6 +47,10 @@
     {
       "name": "quiet-chatrooms",
       "relativePath": "post/artworks/quiet-chatrooms"
+    },
+    {
+      "name": "Geršgorin-and-his-circles",
+      "relativePath": "post/Geršgorin-and-his-circles"
     }
   ],
   "nonMdFiles": [
@@ -50,16 +58,6 @@
       "name": "PROFITPROPHET.jpg",
       "basename": "PROFITPROPHET",
       "relativePath": "post/artworks/PROFITPROPHET.jpg"
-    },
-    {
-      "name": "print-0.jpg",
-      "basename": "print-0",
-      "relativePath": "post/artworks/hannover/print-0.jpg"
-    },
-    {
-      "name": "00.png",
-      "basename": "00",
-      "relativePath": "post/artworks/ncca/00.png"
     },
     {
       "name": "Darboux-curve.mp4",
@@ -72,16 +70,6 @@
       "relativePath": "post/bonnet-movie/bg-minus.mp4"
     },
     {
-      "name": "print-1.jpg",
-      "basename": "print-1",
-      "relativePath": "post/artworks/hannover/print-1.jpg"
-    },
-    {
-      "name": "print-2.jpg",
-      "basename": "print-2",
-      "relativePath": "post/artworks/hannover/print-2.jpg"
-    },
-    {
       "name": "bg-plus.mp4",
       "basename": "bg-plus",
       "relativePath": "post/bonnet-movie/bg-plus.mp4"
@@ -92,9 +80,59 @@
       "relativePath": "post/bonnet-movie/darboux-surface-buildup.mp4"
     },
     {
+      "name": "planar-curvature-lines.mp4",
+      "basename": "planar-curvature-lines",
+      "relativePath": "post/bonnet-movie/planar-curvature-lines.mp4"
+    },
+    {
       "name": "spherical-curvature-lines.mp4",
       "basename": "spherical-curvature-lines",
       "relativePath": "post/bonnet-movie/spherical-curvature-lines.mp4"
+    },
+    {
+      "name": "image-00000.jpg",
+      "basename": "image-00000",
+      "relativePath": "post/artworks/gypsum-gallery/image-00000.jpg"
+    },
+    {
+      "name": "image-00001.jpg",
+      "basename": "image-00001",
+      "relativePath": "post/artworks/gypsum-gallery/image-00001.jpg"
+    },
+    {
+      "name": "image-00002.jpg",
+      "basename": "image-00002",
+      "relativePath": "post/artworks/gypsum-gallery/image-00002.jpg"
+    },
+    {
+      "name": "image-00003.jpg",
+      "basename": "image-00003",
+      "relativePath": "post/artworks/gypsum-gallery/image-00003.jpg"
+    },
+    {
+      "name": "image-00005.jpg",
+      "basename": "image-00005",
+      "relativePath": "post/artworks/gypsum-gallery/image-00005.jpg"
+    },
+    {
+      "name": "print-0.jpg",
+      "basename": "print-0",
+      "relativePath": "post/artworks/hannover/print-0.jpg"
+    },
+    {
+      "name": "print-1.jpg",
+      "basename": "print-1",
+      "relativePath": "post/artworks/hannover/print-1.jpg"
+    },
+    {
+      "name": "print-2.jpg",
+      "basename": "print-2",
+      "relativePath": "post/artworks/hannover/print-2.jpg"
+    },
+    {
+      "name": "00.png",
+      "basename": "00",
+      "relativePath": "post/artworks/ncca/00.png"
     },
     {
       "name": "Image-001.jpg",
@@ -102,19 +140,14 @@
       "relativePath": "post/artworks/nile-sunset/Image-001.jpg"
     },
     {
-      "name": "planar-curvature-lines.mp4",
-      "basename": "planar-curvature-lines",
-      "relativePath": "post/bonnet-movie/planar-curvature-lines.mp4"
+      "name": "Image-002.jpg",
+      "basename": "Image-002",
+      "relativePath": "post/artworks/nile-sunset/Image-002.jpg"
     },
     {
       "name": "Image-003.jpg",
       "basename": "Image-003",
       "relativePath": "post/artworks/nile-sunset/Image-003.jpg"
-    },
-    {
-      "name": "Image-002.jpg",
-      "basename": "Image-002",
-      "relativePath": "post/artworks/nile-sunset/Image-002.jpg"
     },
     {
       "name": "Image-004.jpg",
@@ -130,31 +163,6 @@
       "name": "quiet-chatrooms.png",
       "basename": "quiet-chatrooms",
       "relativePath": "post/artworks/quiet-chatrooms/quiet-chatrooms.png"
-    },
-    {
-      "name": "image-00000.jpg",
-      "basename": "image-00000",
-      "relativePath": "post/artworks/gypsum-gallery/image-00000.jpg"
-    },
-    {
-      "name": "image-00001.jpg",
-      "basename": "image-00001",
-      "relativePath": "post/artworks/gypsum-gallery/image-00001.jpg"
-    },
-    {
-      "name": "image-00003.jpg",
-      "basename": "image-00003",
-      "relativePath": "post/artworks/gypsum-gallery/image-00003.jpg"
-    },
-    {
-      "name": "image-00002.jpg",
-      "basename": "image-00002",
-      "relativePath": "post/artworks/gypsum-gallery/image-00002.jpg"
-    },
-    {
-      "name": "image-00005.jpg",
-      "basename": "image-00005",
-      "relativePath": "post/artworks/gypsum-gallery/image-00005.jpg"
     }
   ]
 }

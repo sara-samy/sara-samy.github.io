@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home.md",
+                "file": "post/bonnet-movie/index.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "home"
+              "title": "index"
             }
           }
         ]
@@ -184,6 +184,14 @@
   },
   "active": "94ddd43db0c77d36",
   "lastOpenFiles": [
+    "post/bonnet-movie/index.md",
+    "post/Geršgorin-and-his-circles/index.md.md",
+    "post/Geršgorin-and-his-circles",
+    "post/hyperbolic-number-theory/Untitled.md",
+    "post/hyperbolic-number-theory/index.md",
+    "home.md",
+    "post/hyperbolic-number-theory",
+    "post/discrete-laplacian/Untitled.md",
     "post/artworks/index.md",
     "post/discrete-laplacian/index.md",
     "_obsidian-templates/theorem.md",
@@ -199,18 +207,12 @@
     "_obsidian-templates",
     "obsidian-templates/bismallah.md",
     "obsidian-templates/and-and-and.md",
-    "post/bonnet-movie/index.md",
     "obsidian-templates/proof.md",
     "obsidian-templates/theorem.md",
     "obsidian-templates/margin-note.md",
     "obsidian-templates/figure.md",
     "obsidian-templates/side-note.md",
     "obsidian-templates/leaf-template.md",
-    "obsidian-templates/zotero-template.md",
-    "obsidian-templates/book-data-template.md",
-    "obsidian-templates/arabic-template.md",
-    "obsidian-templates/weekly-readings-template.md",
-    "obsidian-templates/farisi-template.md",
     "obsidian-templates",
     "post/artworks/nile-sunset/Image-003.jpg",
     "media/days/nvim-problem.png",
@@ -228,8 +230,6 @@
     "media/zotero",
     "media/zotero/morier-genoudSymplecticFriezePatterns2019",
     "media/Excalidraw/Pngs",
-    "media/Excalidraw/untitled folder",
-    "days/sgi",
     "math-notes/convergence-of-random-variables.canvas",
     "Untitled.canvas",
     "math-notes/thesis/Canvas.canvas"

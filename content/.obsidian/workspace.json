@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_obsidian-templates/theorem.md",
+                "file": "home.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "theorem"
+              "title": "home"
             }
           }
         ]
@@ -182,10 +182,12 @@
       "float-search:Search obsidian in modal view": false
     }
   },
-  "active": "89a3cff34877a856",
+  "active": "94ddd43db0c77d36",
   "lastOpenFiles": [
-    "_obsidian-templates/zotero-template.md",
+    "post/artworks/index.md",
+    "post/discrete-laplacian/index.md",
     "_obsidian-templates/theorem.md",
+    "_obsidian-templates/zotero-template.md",
     "_obsidian-templates/side-note.md",
     "_obsidian-templates/proof.md",
     "_obsidian-templates/margin-note.md",
@@ -197,9 +199,7 @@
     "_obsidian-templates",
     "obsidian-templates/bismallah.md",
     "obsidian-templates/and-and-and.md",
-    "post/test/index.md",
     "post/bonnet-movie/index.md",
-    "post/artworks/index.md",
     "obsidian-templates/proof.md",
     "obsidian-templates/theorem.md",
     "obsidian-templates/margin-note.md",

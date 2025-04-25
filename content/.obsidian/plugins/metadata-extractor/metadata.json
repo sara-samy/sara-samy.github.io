@@ -1,59 +1,17 @@
 [
   {
-    "fileName": "theorem",
-    "relativePath": "_obsidian-templates/theorem.md"
-  },
-  {
-    "fileName": "side-note",
-    "relativePath": "_obsidian-templates/side-note.md"
-  },
-  {
-    "fileName": "proof",
-    "relativePath": "_obsidian-templates/proof.md"
-  },
-  {
-    "fileName": "margin-note",
-    "relativePath": "_obsidian-templates/margin-note.md"
-  },
-  {
-    "fileName": "hugo-template",
-    "relativePath": "_obsidian-templates/hugo-template.md",
+    "fileName": "home",
+    "relativePath": "home.md",
     "frontmatter": {
-      "title": "Title",
-      "date": null,
-      "draft": true,
-      "math": true
-    }
-  },
-  {
-    "fileName": "figure",
-    "relativePath": "_obsidian-templates/figure.md"
-  },
-  {
-    "fileName": "bismallah",
-    "relativePath": "_obsidian-templates/bismallah.md"
-  },
-  {
-    "fileName": "and-and-and",
-    "relativePath": "_obsidian-templates/and-and-and.md"
-  },
-  {
-    "fileName": "index",
-    "relativePath": "post/test/index.md",
-    "frontmatter": {
-      "title": "margin test",
-      "date": "2025-03-26",
+      "title": "About",
+      "date": "2025-04-21",
       "draft": false,
-      "math": true
+      "excludeFromListings": true
     },
-    "headings": [
+    "links": [
       {
-        "heading": "Lines on Torus",
-        "level": 2
-      },
-      {
-        "heading": "Spherical lines of isothermic Torus",
-        "level": 3
+        "link": "",
+        "displayText": "My Blog Posts"
       }
     ]
   },
@@ -78,6 +36,26 @@
       {
         "heading": "The Bonnet pairs",
         "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "index",
+    "relativePath": "post/test/index.md",
+    "frontmatter": {
+      "title": "margin test",
+      "date": "2025-03-26",
+      "draft": false,
+      "math": true
+    },
+    "headings": [
+      {
+        "heading": "Lines on Torus",
+        "level": 2
+      },
+      {
+        "heading": "Spherical lines of isothermic Torus",
+        "level": 3
       }
     ]
   },
@@ -122,19 +100,41 @@
     ]
   },
   {
-    "fileName": "home",
-    "relativePath": "home.md",
+    "fileName": "proof",
+    "relativePath": "_obsidian-templates/proof.md"
+  },
+  {
+    "fileName": "theorem",
+    "relativePath": "_obsidian-templates/theorem.md"
+  },
+  {
+    "fileName": "side-note",
+    "relativePath": "_obsidian-templates/side-note.md"
+  },
+  {
+    "fileName": "figure",
+    "relativePath": "_obsidian-templates/figure.md"
+  },
+  {
+    "fileName": "and-and-and",
+    "relativePath": "_obsidian-templates/and-and-and.md"
+  },
+  {
+    "fileName": "margin-note",
+    "relativePath": "_obsidian-templates/margin-note.md"
+  },
+  {
+    "fileName": "hugo-template",
+    "relativePath": "_obsidian-templates/hugo-template.md",
     "frontmatter": {
-      "title": "About",
-      "date": "2025-04-21",
-      "draft": false,
-      "excludeFromListings": true
-    },
-    "links": [
-      {
-        "link": "",
-        "displayText": "My Blog Posts"
-      }
-    ]
+      "title": "Title",
+      "date": null,
+      "draft": true,
+      "math": true
+    }
+  },
+  {
+    "fileName": "bismallah",
+    "relativePath": "_obsidian-templates/bismallah.md"
   }
 ]

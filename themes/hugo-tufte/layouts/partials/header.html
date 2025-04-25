@@ -1,9 +1,12 @@
 <head>
   <header class="site-header">
     <div class="header-content">
-      <a href="https://sara-samy.github.io/" class="head-title">
-        {{ .Site.Title}}<span class="cursor">_</span>
-      </a>
+      <div class="header-top-row">
+        <img src="/img/hudhud.jpeg" alt="Profile Picture" class="profile-picture">
+        <a href="https://sara-samy.github.io/" class="head-title">
+          {{ .Site.Title}}<span class="cursor">_</span>
+        </a>
+      </div>
       <nav class="header-nav">
         <div class="nav-links">
           <a href="{{ .Site.Home.RelPermalink }}home/" class="nav-link"

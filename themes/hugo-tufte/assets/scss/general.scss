@@ -540,13 +540,31 @@ $theorem-colors: (
   width: 100%;
 
   .header-content {
+
     display: flex;
     flex-direction: column;
     padding: 0.5rem 1rem 0;
-    gap: 2rem; //top gap between header and about
+    
+    .header-top-row {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .profile-picture {
+      width: 4.3rem;
+      height: 4.3rem;
+      object-fit: cover;
+      border-radius: 2px;
+      border: 0px solid #eee;
+      position: relative;
+      top: 1.8rem; // Adjust this value to move it down
+    }
 
     .head-title {
       font-size: 2.3rem;
+      margin: 0;
       font-family: $serif-fonts;
       font-style: italic;
       font-weight: bold;
@@ -562,6 +580,9 @@ $theorem-colors: (
     }
 
     .header-nav {
+      margin-left: 6rem; // Align with title (4.5rem image + 1.5rem gap)
+      margin-top: 0.25rem;
+
       .home-link {
         font-family: $serif-fonts;
         font-style: italic;

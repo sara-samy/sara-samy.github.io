@@ -1,0 +1,11 @@
+---
+title: "The discrete Laplacian"
+date: 2025-03-26
+draft: false
+math: true
+---
+
+Below are some notes on the different definitions of a _discrete Laplacian_.
+## Graph Laplacian
+
+## Cotangent Laplacian

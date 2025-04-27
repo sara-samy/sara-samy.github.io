@@ -8,18 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "94ddd43db0c77d36",
+            "id": "fa227687593039ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "post/bonnet-movie/index.md",
+                "file": "post/Gershgorin-and-his-circles/index.md.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "index.md"
             }
           }
         ]
@@ -182,11 +182,12 @@
       "float-search:Search obsidian in modal view": false
     }
   },
-  "active": "94ddd43db0c77d36",
+  "active": "fa227687593039ca",
   "lastOpenFiles": [
+    "post/Gershgorin-and-his-circles/index.md.md",
     "post/bonnet-movie/index.md",
-    "post/Geršgorin-and-his-circles/index.md.md",
-    "post/Geršgorin-and-his-circles",
+    "Icon\r",
+    "post/Gershgorin-and-his-circles",
     "post/hyperbolic-number-theory/Untitled.md",
     "post/hyperbolic-number-theory/index.md",
     "home.md",
@@ -212,7 +213,6 @@
     "obsidian-templates/margin-note.md",
     "obsidian-templates/figure.md",
     "obsidian-templates/side-note.md",
-    "obsidian-templates/leaf-template.md",
     "obsidian-templates",
     "post/artworks/nile-sunset/Image-003.jpg",
     "media/days/nvim-problem.png",
@@ -229,7 +229,6 @@
     "media/zotero/leeIntroductionSmoothManifolds2012",
     "media/zotero",
     "media/zotero/morier-genoudSymplecticFriezePatterns2019",
-    "media/Excalidraw/Pngs",
     "math-notes/convergence-of-random-variables.canvas",
     "Untitled.canvas",
     "math-notes/thesis/Canvas.canvas"

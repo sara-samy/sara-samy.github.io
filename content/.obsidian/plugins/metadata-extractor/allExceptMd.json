@@ -13,20 +13,24 @@
       "relativePath": "post"
     },
     {
+      "name": "Gershgorin-and-his-circles",
+      "relativePath": "post/Gershgorin-and-his-circles"
+    },
+    {
       "name": "artworks",
       "relativePath": "post/artworks"
     },
     {
-      "name": "bonnet-movie",
-      "relativePath": "post/bonnet-movie"
+      "name": "hyperbolic-number-theory",
+      "relativePath": "post/hyperbolic-number-theory"
     },
     {
       "name": "discrete-laplacian",
       "relativePath": "post/discrete-laplacian"
     },
     {
-      "name": "hyperbolic-number-theory",
-      "relativePath": "post/hyperbolic-number-theory"
+      "name": "bonnet-movie",
+      "relativePath": "post/bonnet-movie"
     },
     {
       "name": "gypsum-gallery",
@@ -47,13 +51,14 @@
     {
       "name": "quiet-chatrooms",
       "relativePath": "post/artworks/quiet-chatrooms"
-    },
-    {
-      "name": "Geršgorin-and-his-circles",
-      "relativePath": "post/Geršgorin-and-his-circles"
     }
   ],
   "nonMdFiles": [
+    {
+      "name": "Icon\r",
+      "basename": "Icon\r",
+      "relativePath": "Icon\r"
+    },
     {
       "name": "PROFITPROPHET.jpg",
       "basename": "PROFITPROPHET",

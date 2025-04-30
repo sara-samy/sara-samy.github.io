@@ -1,5 +1,17 @@
 [
   {
+    "fileName": "CV.pdf",
+    "relativePath": "pdfs/CV.pdf.md",
+    "backlinks": [
+      {
+        "fileName": "home",
+        "link": "CV.pdf",
+        "relativePath": "home.md",
+        "displayText": "c.v (pdf)"
+      }
+    ]
+  },
+  {
     "fileName": "home",
     "relativePath": "home.md",
     "frontmatter": {
@@ -8,10 +20,11 @@
       "draft": false,
       "excludeFromListings": true
     },
-    "headings": [
+    "links": [
       {
-        "heading": "other stuff:",
-        "level": 2
+        "link": "CV.pdf",
+        "displayText": "c.v (pdf)",
+        "relativePath": "pdfs/CV.pdf.md"
       }
     ]
   },
@@ -70,8 +83,8 @@
     ]
   },
   {
-    "fileName": "index.md",
-    "relativePath": "post/Gershgorin-and-his-circles/index.md.md",
+    "fileName": "index",
+    "relativePath": "post/Gershgorin-and-his-circles/index.md",
     "frontmatter": {
       "title": "Gershgorin and his circles",
       "date": "2025-04-25",

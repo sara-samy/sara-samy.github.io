@@ -51,6 +51,10 @@
     {
       "name": "quiet-chatrooms",
       "relativePath": "post/artworks/quiet-chatrooms"
+    },
+    {
+      "name": "pdfs",
+      "relativePath": "pdfs"
     }
   ],
   "nonMdFiles": [

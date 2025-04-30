@@ -5,7 +5,9 @@ math: true
 draft: false
 ---
 
-This page showcases the animations produced for the movie _Solving the Bonnet problem (2023)_, directed by [Ekaterina Eremenko](https://page.math.tu-berlin.de/~eremenko/). You can watch the trailer [here](https://www.youtube.com/watch?v=iQvsKbw-ksg). The movie is based on the paper [_Compact Bonnet Pairs: isometric tori with the same curvatures (2021)_](https://arxiv.org/abs/2110.06335) by Alexander I. Bobenko, Tim Hoffmann, and Andrew O. Sageman-Furnas.
+This page showcases the animations produced for the movie _Solving the Bonnet problem (2023)_, directed by [Ekaterina Eremenko](https://page.math.tu-berlin.de/~eremenko/). You can watch the trailer [here](https://www.youtube.com/watch?v=iQvsKbw-ksg).
+
+The movie is based on the paper [_Compact Bonnet Pairs_](https://arxiv.org/abs/2110.06335) by Alexander I. Bobenko, Tim Hoffmann, and Andrew O. Sageman-Furnas.
 
 ## Curvature lines of isothermic Torus
 

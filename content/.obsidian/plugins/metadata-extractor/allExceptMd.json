@@ -13,12 +13,16 @@
       "relativePath": "post"
     },
     {
+      "name": "artworks",
+      "relativePath": "post/artworks"
+    },
+    {
       "name": "Gershgorin-and-his-circles",
       "relativePath": "post/Gershgorin-and-his-circles"
     },
     {
-      "name": "artworks",
-      "relativePath": "post/artworks"
+      "name": "bonnet-movie",
+      "relativePath": "post/bonnet-movie"
     },
     {
       "name": "hyperbolic-number-theory",
@@ -27,10 +31,6 @@
     {
       "name": "discrete-laplacian",
       "relativePath": "post/discrete-laplacian"
-    },
-    {
-      "name": "bonnet-movie",
-      "relativePath": "post/bonnet-movie"
     },
     {
       "name": "gypsum-gallery",
@@ -85,14 +85,14 @@
       "relativePath": "post/bonnet-movie/darboux-surface-buildup.mp4"
     },
     {
-      "name": "planar-curvature-lines.mp4",
-      "basename": "planar-curvature-lines",
-      "relativePath": "post/bonnet-movie/planar-curvature-lines.mp4"
-    },
-    {
       "name": "spherical-curvature-lines.mp4",
       "basename": "spherical-curvature-lines",
       "relativePath": "post/bonnet-movie/spherical-curvature-lines.mp4"
+    },
+    {
+      "name": "planar-curvature-lines.mp4",
+      "basename": "planar-curvature-lines",
+      "relativePath": "post/bonnet-movie/planar-curvature-lines.mp4"
     },
     {
       "name": "image-00000.jpg",
@@ -103,11 +103,6 @@
       "name": "image-00001.jpg",
       "basename": "image-00001",
       "relativePath": "post/artworks/gypsum-gallery/image-00001.jpg"
-    },
-    {
-      "name": "image-00002.jpg",
-      "basename": "image-00002",
-      "relativePath": "post/artworks/gypsum-gallery/image-00002.jpg"
     },
     {
       "name": "image-00003.jpg",
@@ -125,14 +120,9 @@
       "relativePath": "post/artworks/hannover/print-0.jpg"
     },
     {
-      "name": "print-1.jpg",
-      "basename": "print-1",
-      "relativePath": "post/artworks/hannover/print-1.jpg"
-    },
-    {
-      "name": "print-2.jpg",
-      "basename": "print-2",
-      "relativePath": "post/artworks/hannover/print-2.jpg"
+      "name": "image-00002.jpg",
+      "basename": "image-00002",
+      "relativePath": "post/artworks/gypsum-gallery/image-00002.jpg"
     },
     {
       "name": "00.png",
@@ -168,6 +158,16 @@
       "name": "quiet-chatrooms.png",
       "basename": "quiet-chatrooms",
       "relativePath": "post/artworks/quiet-chatrooms/quiet-chatrooms.png"
+    },
+    {
+      "name": "print-1.jpg",
+      "basename": "print-1",
+      "relativePath": "post/artworks/hannover/print-1.jpg"
+    },
+    {
+      "name": "print-2.jpg",
+      "basename": "print-2",
+      "relativePath": "post/artworks/hannover/print-2.jpg"
     }
   ]
 }

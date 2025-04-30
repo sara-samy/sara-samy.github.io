@@ -1,24 +1,16 @@
 [
   {
-    "fileName": "index",
-    "relativePath": "post/bonnet-movie/index.md",
+    "fileName": "home",
+    "relativePath": "home.md",
     "frontmatter": {
-      "title": "Solving the Bonnet problem - A hands-on adventure in 17 chapters",
-      "date": "2024-02-15T20:49:43+01:00",
-      "math": true,
-      "draft": false
+      "title": "About",
+      "date": "2025-04-21",
+      "draft": false,
+      "excludeFromListings": true
     },
     "headings": [
       {
-        "heading": "Curvature lines of isothermic Torus",
-        "level": 2
-      },
-      {
-        "heading": "Darboux's classification of isothermic surfaces with planar curvature lines",
-        "level": 2
-      },
-      {
-        "heading": "The Bonnet pairs",
+        "heading": "other stuff:",
         "level": 2
       }
     ]
@@ -48,6 +40,40 @@
     "relativePath": "post/hyperbolic-number-theory/index.md",
     "frontmatter": {
       "title": "Hyperbolic geometry and number theory",
+      "date": "2025-04-25",
+      "draft": true,
+      "math": true
+    }
+  },
+  {
+    "fileName": "index",
+    "relativePath": "post/bonnet-movie/index.md",
+    "frontmatter": {
+      "title": "Solving the Bonnet problem - A hands-on adventure in 17 chapters",
+      "date": "2024-02-15T20:49:43+01:00",
+      "math": true,
+      "draft": false
+    },
+    "headings": [
+      {
+        "heading": "Curvature lines of isothermic Torus",
+        "level": 2
+      },
+      {
+        "heading": "Darboux's classification of isothermic surfaces with planar curvature lines",
+        "level": 2
+      },
+      {
+        "heading": "The Bonnet pairs",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "fileName": "index.md",
+    "relativePath": "post/Gershgorin-and-his-circles/index.md.md",
+    "frontmatter": {
+      "title": "Gershgorin and his circles",
       "date": "2025-04-25",
       "draft": false,
       "math": true
@@ -94,54 +120,8 @@
     ]
   },
   {
-    "fileName": "index.md",
-    "relativePath": "post/Gershgorin-and-his-circles/index.md.md",
-    "frontmatter": {
-      "title": "Gershgorin and his circles",
-      "date": "2025-04-25",
-      "draft": false,
-      "math": true
-    }
-  },
-  {
-    "fileName": "home",
-    "relativePath": "home.md",
-    "frontmatter": {
-      "title": "About",
-      "date": "2025-04-21",
-      "draft": false,
-      "excludeFromListings": true
-    },
-    "headings": [
-      {
-        "heading": "Other stuff:",
-        "level": 2
-      }
-    ]
-  },
-  {
     "fileName": "bismallah",
     "relativePath": "_obsidian-templates/bismallah.md"
-  },
-  {
-    "fileName": "theorem",
-    "relativePath": "_obsidian-templates/theorem.md"
-  },
-  {
-    "fileName": "proof",
-    "relativePath": "_obsidian-templates/proof.md"
-  },
-  {
-    "fileName": "side-note",
-    "relativePath": "_obsidian-templates/side-note.md"
-  },
-  {
-    "fileName": "and-and-and",
-    "relativePath": "_obsidian-templates/and-and-and.md"
-  },
-  {
-    "fileName": "margin-note",
-    "relativePath": "_obsidian-templates/margin-note.md"
   },
   {
     "fileName": "hugo-template",
@@ -154,7 +134,27 @@
     }
   },
   {
+    "fileName": "theorem",
+    "relativePath": "_obsidian-templates/theorem.md"
+  },
+  {
+    "fileName": "side-note",
+    "relativePath": "_obsidian-templates/side-note.md"
+  },
+  {
+    "fileName": "proof",
+    "relativePath": "_obsidian-templates/proof.md"
+  },
+  {
+    "fileName": "margin-note",
+    "relativePath": "_obsidian-templates/margin-note.md"
+  },
+  {
     "fileName": "figure",
     "relativePath": "_obsidian-templates/figure.md"
+  },
+  {
+    "fileName": "and-and-and",
+    "relativePath": "_obsidian-templates/and-and-and.md"
   }
 ]

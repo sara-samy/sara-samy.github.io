@@ -1,7 +1,7 @@
 ---
 title: "The discrete Laplacian"
 date: 2025-03-26
-draft: false
+draft: true
 math: true
 ---
 

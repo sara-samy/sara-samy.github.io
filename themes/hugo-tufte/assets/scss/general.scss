@@ -460,9 +460,34 @@ $theorem-colors: (
     border-left: 0px solid #93a1a1;
     animation: fadeIn 0.3s ease-out;
     font-size: 1.25em;
+    position: relative;
+
+
+  // Add QED rectangle at the end
+  &::after {
+    content: "■";
+    font-size: 0.7em;
+    position: absolute;
+    bottom: 1rem; // Adjust vertical position
+    right: 0.5rem;  // Adjust horizontal position
+    font-weight: bold;
+    line-height: 1;
+    opacity: 0.8;
+  }
+    // Ensure last paragraph doesn't collide with QED symbol
+    p:last-child,
+    ol:last-child,
+    ul:last-child {
+      margin-bottom: 1.5rem; // Add space for QED symbol
+      padding-right: 1.5rem; // Prevent text overlap
+    }
 
     @media (max-width: 760px) {
       font-size: 1.15em;
+      &::after {
+        bottom: 0.8rem;
+        right: 0.3rem;
+      }
     }
 
     p,
@@ -676,4 +701,3 @@ $theorem-colors: (
     width: 90%; // Match mobile content width
   }
 }
-

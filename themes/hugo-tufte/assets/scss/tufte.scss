@@ -90,29 +90,24 @@ h1,
 h2,
 h3 {
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.2;
+  margin-top: 2.5rem;  // Base spacing for all headers
+  margin-bottom: 0.6rem;
 }
 
 h1 {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-  font-size: 2.1rem;
-}
-
-h2,
-h3 {
-  font-style: italic;
-  margin-bottom: 0;
+  font-size: 1.8rem;
+  margin-top: 2rem;  // Slightly more for h1
 }
 
 h2 {
-  margin-top: 2.1rem;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
+  font-style: italic;
 }
 
 h3 {
-  font-size: 1.1rem;
-  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
 .author,
@@ -125,9 +120,9 @@ h3 {
 
 .subtitle {
   font-style: italic;
-  margin-top: 1rem;
+  margin-top: 0.8rem; // Reduced spacing
   margin-bottom: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem; // Scaled down to match h2
   display: block;
   line-height: 1;
 }
@@ -142,13 +137,12 @@ h3 {
 
 article {
   position: relative;
-  //padding: 6rem 0rem;
   padding: 6rem 0rem;
 }
 
 section {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem; // Tighter section spacing
+  padding-bottom: 0.5rem;
 }
 
 .page-list {
@@ -160,17 +154,17 @@ section {
   }
 
   .content-title {
-    margin-top: 1.4rem; //controls spacing between listings
-    margin-bottom: 1.0rem;
+    margin-top: 1.2rem; // Reduced spacing
+    margin-bottom: 0.8rem;
     font-family: $serif-fonts;
     font-size: 1.3rem;
 
     a {
       color: #111;
       text-decoration: none;
-      font-style: italic; // Match your header
+      font-style: italic;
       &:hover {
-        color: #268bd2; // Consistent hover
+        color: #268bd2;
       }
     }
   }
@@ -178,7 +172,7 @@ section {
   p {
     font-size: 1.1rem;
     line-height: 1.5;
-    margin-top: 0.5rem;
+    margin-top: 0.3rem; // Tighter spacing
     color: #555;
   }
 }
@@ -191,9 +185,9 @@ dl {
 }
 
 p {
-  line-height: 2rem;
-  margin-top: 1.4rem;
-  margin-bottom: 1.4rem;
+  line-height: 1.8rem; // Slightly reduced from 2rem
+  margin-top: 1.2rem; // Reduced from 1.4rem
+  margin-bottom: 1.2rem;
   padding-right: 0;
   vertical-align: baseline;
   hyphens: auto;
@@ -536,4 +530,3 @@ label.marginnote-ind {
     width: 90%;
   }
 }
-

@@ -360,7 +360,7 @@ $theorem-colors: (
   padding: 1rem 1.2rem;
   border-left: 3px solid;
   background-color: rgba(248, 248, 248, 0.5);
-  font-size: 1.25em;
+  font-size: 1.3em;
   line-height: 1.55;
   border-radius: 0 3px 3px 0;
 
@@ -392,11 +392,13 @@ $theorem-colors: (
   .theorem-type {
     font-style: italic;
     font-weight: 600;
+    font-size: 1.4rem;
   }
 
   .theorem-label {
     color: #586e75;
     margin-left: 0.4rem;
+    font-size: 1.2rem;
     font-family: $serif-fonts;
     font-size: 0.98em;
   }
@@ -404,6 +406,7 @@ $theorem-colors: (
   .theorem-title {
     color: #268bd2;
     margin-left: 0.4rem;
+    font-size: 1.2rem;
     font-style: italic;
     font-weight: 500;
   }
@@ -414,7 +417,6 @@ $theorem-colors: (
     ol {
       width: 100% !important;
       margin: 0.5rem 0;
-      font-size: 1em;
     }
   }
 }
@@ -438,7 +440,7 @@ $theorem-colors: (
     gap: 0.4rem;
     padding: 0.2rem 0;
     font-family: $sans-fonts;
-    font-size: 0.98em;
+    font-size: 1.25em;
     transition: color 0.2s;
 
     &:hover {

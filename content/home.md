@@ -5,8 +5,10 @@ draft: false
 excludeFromListings: true
 ---
 
-This is my homepage content. It will appear separately from the blog listings.
+Mathematics student living in Berlin, Germany. 🦜🍃
 
-## Other stuff:
+[_c.v (pdf)_](/pdfs/CV.pdf)
 
 [_artworks (2010-2015)_]({{< ref "post/artworks.md" >}})
+
+📿

@@ -558,7 +558,7 @@ $theorem-colors: (
 .site-header {
   position: relative;
   margin-bottom: 0rem;
-  margin-top: 1.8rem;
+  margin-top: 0.5rem;
   margin-left: 0rem;
   width: 100%;
 
@@ -572,7 +572,7 @@ $theorem-colors: (
       display: flex;
       align-items: center;
       gap: 1.5rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.1rem;
     }
 
     .profile-picture {
@@ -582,11 +582,13 @@ $theorem-colors: (
       border-radius: 2px;
       border: 0px solid #eee;
       position: relative;
-      top: 1.8rem; // Adjust this value to move it down
+      top: 1.67rem; // Adjust this value to move it down
+      right: 0.0rem; // Adjust this value to move it left
+      left: 0.0rem; // Adjust this value to move it right
     }
 
     .head-title {
-      font-size: 2.3rem;
+      font-size: 2.2rem;
       margin: 0;
       font-family: $serif-fonts;
       font-style: italic;
@@ -690,7 +692,7 @@ $theorem-colors: (
     font-weight: 400;
     color: #111;
     margin: 0;
-    padding-bottom: 0.25rem;
+    padding-bottom: 1.0rem;
     border-bottom: 1px solid #eee; // Subtle underline
     line-height: 1.3;
   }

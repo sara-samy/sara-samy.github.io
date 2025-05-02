@@ -5,7 +5,7 @@ baseurl: "https://sara-samy.github.io/"
 title: "sara-samy.github.io"
 
 params:
-  subtitle: "Notes"
+  subtitle: "notes."
   math: true
   codeblocksdark: false
   marginNoteInd: "⊕"

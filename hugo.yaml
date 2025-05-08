@@ -1,17 +1,10 @@
 title: "Blog posts"
 languageCode: "en-us"
-theme: ["hugo-tufte", "plausible-hugo"]
+theme: ["hugo-theme-nostyle", "plausible-hugo"]
 baseurl: "https://sara-samy.github.io/"
 title: "sara-samy.github.io"
 
 params:
-  subtitle: "notes."
-  math: true
-  codeblocksdark: false
-  marginNoteInd: "⊕"
-  showSummary: false
-  hidedate: false
-
   plausible:
     enable: true
     debug: false
@@ -19,14 +12,6 @@ params:
     outbound_link: true
     file_downloads: true
     domain: "sara-samy.github.io"
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-  highlight:
-    noClasses: false
-    guessSyntax: true
 
 ignoreFiles:
   - \.obsidian/.*

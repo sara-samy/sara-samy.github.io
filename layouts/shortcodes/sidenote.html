@@ -1,0 +1,5 @@
+{{- $id := .Get "id" | default (printf "sn-%d" (add 1 (len (findRE "sidenote" .Page.RawContent)))) -}}
+<a href="#{{ $id }}" class="sidenote-number" id="sn-ref-{{ $id }}"></a>
+<span class="sidenote" id="{{ $id }}">
+  {{ .Inner | markdownify }}
+</span>

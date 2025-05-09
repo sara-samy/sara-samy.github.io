@@ -477,7 +477,9 @@ mjx-container[display="true"] > svg {
   }
 }
 
-// ---------------- Mobile --------------- //
+/* ======================================================================== */
+/* MOBILE RESPONSIVENESS                                                    */
+/* ======================================================================== */
 
 @media screen and (max-width: 760px) {
   .w {
@@ -494,43 +496,38 @@ mjx-container[display="true"] > svg {
     position: static !important;
   }
 
-// ----------- Sidenotes ------------ //
+  // ----------- Sidenotes ------------ //
 
-.sidenote-wrapper {
-  position: relative;
-  display: inline;
-}
+  .sidenote-wrapper {
+    position: relative;
+    display: inline;
+  }
 
-.sidenote-number {
-  cursor: pointer;
-}
+  .sidenote-number {
+    cursor: pointer;
+  }
 
-.sidenote-number::after {
-  content: counter(sidenote-counter);
-  color: #6c8edc;
-  text-decoration: underline;
-  vertical-align: super;
-  font-size: 0.8em;
-}
+  .sidenote-number::after {
+    content: counter(sidenote-counter);
+    text-decoration: underline;
+    vertical-align: super;
+  }
 
-.sidenote {
-  position: static;
-  display: none;
-  width: 100%;
-  margin: 1.5rem 0 1.5rem;
-  padding: 1rem;
-  border: 3px solid #6c8edc;
-  clear: both;
-  box-sizing: border-box;
-}
+  .sidenote {
+    width: 100%;
+    clear: both;
+    display: none;
+    position: static;
+    box-sizing: border-box;
+    margin: 1.5rem 0 1.5rem;
+  }
 
-.sidenote::before {
-  content: "";
-  font-weight: bold;
-  color: #6c8edc;
-}
+  .sidenote-number.active + .sidenote {
+    display: block;
+  }
 
-.sidenote-number.active + .sidenote {
-  display: block;
-}
+  // ----------- Theorem ------------ //
+  .theorem-env {
+    clear: both;
+  }
 }

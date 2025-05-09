@@ -257,6 +257,105 @@ details[open] summary {
   text-align: justify;
 }
 
-.toc {
+// --------------------- Math Styling --------------------- //
+
+mjx-container[display="true"] {
+  overflow-x: auto;
+  display: block;
+  max-width: 100%;
+  padding: 0.2rem 0;
+}
+
+mjx-container[display="true"] > svg {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+// ------------------- Sidenotes ------------------------ //
+
+.sidenote-wrapper {
+  display: inline;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+  counter-increment: sidenote-counter;
+}
+
+.sidenote-number::after {
+  content: counter(sidenote-counter);
+  font-size: 0.75em;
+  vertical-align: top;
+}
+
+.sidenote {
+  float: right;
+  clear: right;
+  width: 45%;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  position: relative;
+  margin: 0rem -65% 0rem 0rem;
+}
+
+.sidenote:before {
+  content: counter(sidenote-counter) ". ";
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+// ---------------- Mobile --------------- //
+
+@media screen and (max-width: 760px) {
+  .w {
+    max-width: 100%;
+    margin: 0 auto 0 0;
+    padding: 1rem 1rem;
+    text-align: justify;
+  }
+
+  mjx-container[display="true"] {
+    display: block !important;
+    width: 100% !important;
+    clear: both;
+    position: static !important;
+  }
+
+// ----------- Sidenotes ------------ //
+
+.sidenote-wrapper {
+  position: relative;
+  display: inline;
+}
+
+.sidenote-number {
+  cursor: pointer;
+}
+
+.sidenote-number::after {
+  content: counter(sidenote-counter);
+  color: #6c8edc;
+  text-decoration: underline;
+  vertical-align: super;
+  font-size: 0.8em;
+}
+
+.sidenote {
+  position: static;
+  display: none;
+  width: 100%;
+  margin: 1.5rem 0 1.5rem;
   padding: 1rem;
+  border: 3px solid #6c8edc;
+  clear: both;
+  box-sizing: border-box;
+}
+
+.sidenote::before {
+  content: "";
+  font-weight: bold;
+  color: #6c8edc;
+}
+
+.sidenote-number.active + .sidenote {
+  display: block;
+}
 }

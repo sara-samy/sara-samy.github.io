@@ -144,17 +144,22 @@ body[a="light"] { @include light-appearance; }
 html { height: 100%; }
 
 body {
-  font-family: monospace;
-  font-size: 16px;
+  font-family: 'Noto Emoji', 'Cairo', 'et-book', serif;
+  font-size: 22px;
   line-height: 1.4;
   margin: 0;
   min-height: 100%;
   overflow-wrap: break-word;
+  counter-reset: sidenote-counter;
 }
 
-h2, h3, h4, h5, h6 { margin-top: 1.5rem; }
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
 
-p { margin: 1rem 0; }
+p { margin: 1.4rem 0; }
 
 li { margin: 0.4rem 0; }
 
@@ -239,10 +244,17 @@ details[open] summary {
   align-items: center;
 }
 
+.toc {
+  padding: 1rem;
+}
+
+// ---------------- Content Layout ------------------------ //
+
 .w {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 4rem 2rem;
+  max-width: 55%;
+  margin: 0 0 0 0;
+  padding: 0rem 1rem 0rem 1rem;
+  text-align: justify;
 }
 
 .toc {

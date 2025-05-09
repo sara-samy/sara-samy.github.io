@@ -3,7 +3,6 @@
   <div class="theorem-head">
     <span class="theorem-type">{{ $type | title }}</span>
     {{ with .Get "label" }}<span class="theorem-label">({{ . }})</span>{{ end }}
-    {{ with .Get "title" }}<span class="theorem-title">{{ . }}</span>{{ end }}
   </div>
   <div class="theorem-body">
     {{ .Inner | markdownify }}

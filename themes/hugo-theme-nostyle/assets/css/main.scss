@@ -315,6 +315,41 @@ mjx-container[display="true"] > svg {
   content: counter(sidenote-counter) ". ";
   font-weight: bold;
   font-size: 1.15rem;
+/* ======================================================================== */
+/* THEOREM AND PROOF ENVIRONMENTS                                           */
+/* ======================================================================== */
+
+.theorem-env {
+  width: 96%;
+  margin: 1rem 0rem 1rem;
+  padding: 0.5rem 1rem 0.5rem;
+  border-left: 2px solid;
+  font-size: 20px;
+
+  .theorem-head {
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .theorem-type {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .theorem-label {
+    margin-left: 0.4rem;
+  }
+
+  .theorem-body {
+    p,
+    ul,
+    ol {
+      width: 100%;
+      margin: 0rem;
+    }
+  }
 }
 
 // ---------------- Mobile --------------- //

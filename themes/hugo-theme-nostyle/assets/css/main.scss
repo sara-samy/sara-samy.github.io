@@ -1,3 +1,72 @@
+// Font definitions
+// ET Book font face definitions
+@font-face {
+  font-family: 'et-book';
+  src: url('/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  unicode-range: U+0000-10FFFF;
+}
+
+@font-face {
+  font-family: 'et-book';
+  src: url('/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff') format('woff');
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  unicode-range: U+0000-10FFFF;
+}
+
+@font-face {
+  font-family: 'et-book';
+  src: url('/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff') format('woff');
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  unicode-range: U+0000-10FFFF;
+}
+
+/* Cairo - arabic */
+@font-face {
+  font-family: 'Cairo';
+  src: url('/fonts/Cairo/cairo-v28-arabic_latin-regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range:
+    U+0600-06FF,
+    U+0750-077F,
+    U+08A0-08FF,
+    U+FB50-FDFF,
+    U+FE70-FEFF,
+    U+1EE00-1EEFF;
+}
+
+/* Noto Emoji */
+@font-face {
+  font-family: 'Noto Emoji';
+  src: url('/fonts/noto-emoji/noto-emoji-v53-emoji-300.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  unicode-range:
+     U+1F300-1F5FF,
+     U+1F600-1F64F,
+     U+1F680-1F6FF,
+     U+1F700-1F77F,
+     U+1F780-1F7FF,
+     U+1F800-1F8FF,
+     U+1F900-1F9FF,
+     U+1FA00-1FA6F,
+     U+1FA70-1FAFF,
+     U+2600-26FF,
+     U+2700-27BF,
+     U+FE00-FE0F,
+     U+1F1E6-1F1FF;
+}
+
+
 // -------------- THEME SWITCHER -------------- //
 @mixin theme($--bg-color, $--primary-text-color, $--secondary-text-color, $--link-color, $--visited-link-color, $--highlight) {
   background-color: $--bg-color;

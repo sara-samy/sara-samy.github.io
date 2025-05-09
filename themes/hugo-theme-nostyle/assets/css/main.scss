@@ -121,12 +121,27 @@
 }
 
 @mixin dark-appearance {
-  @include theme(#000000, #ffffff, #000000, #79a8ff, #f78fe7, #2f3849); // modus-vivendi
+  @include theme(
+    #111217,
+    #e0e0e0,
+    #2c2f36,
+    #6c8edc,
+    #d87bb4,
+    #3a3f4e
+  );
 }
 
 @mixin light-appearance {
-  @include theme(#ffffff, #000000, #595959, #3548cf, #8f0075, #dae5ec); // modus-operandi
+  @include theme(
+    #fefcf0,
+    #1e1e1e,
+    #777777,
+    #4b63b8,
+    #a0507a,
+    #e4e8ec
+  );
 }
+
 
 body[a="dark"] { @include dark-appearance; }
 body[a="light"] { @include light-appearance; }

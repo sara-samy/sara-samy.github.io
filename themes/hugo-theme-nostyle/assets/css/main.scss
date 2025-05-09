@@ -1,8 +1,9 @@
 // Font definitions
 // ET Book font face definitions
 @font-face {
-  font-family: 'et-book';
-  src: url('/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff') format('woff');
+  font-family: "et-book";
+  src: url("/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff")
+    format("woff");
   font-style: normal;
   font-weight: normal;
   font-display: swap;
@@ -10,8 +11,9 @@
 }
 
 @font-face {
-  font-family: 'et-book';
-  src: url('/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff') format('woff');
+  font-family: "et-book";
+  src: url("/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff")
+    format("woff");
   font-style: italic;
   font-weight: normal;
   font-display: swap;
@@ -19,8 +21,9 @@
 }
 
 @font-face {
-  font-family: 'et-book';
-  src: url('/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff') format('woff');
+  font-family: "et-book";
+  src: url("/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff")
+    format("woff");
   font-style: normal;
   font-weight: bold;
   font-display: swap;
@@ -29,53 +32,52 @@
 
 /* Cairo - arabic */
 @font-face {
-  font-family: 'Cairo';
-  src: url('/fonts/Cairo/cairo-v28-arabic_latin-regular.woff2') format('woff2');
+  font-family: "Cairo";
+  src: url("/fonts/Cairo/cairo-v28-arabic_latin-regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  unicode-range:
-    U+0600-06FF,
-    U+0750-077F,
-    U+08A0-08FF,
-    U+FB50-FDFF,
-    U+FE70-FEFF,
+  unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF,
     U+1EE00-1EEFF;
 }
 
 /* Noto Emoji */
 @font-face {
-  font-family: 'Noto Emoji';
-  src: url('/fonts/noto-emoji/noto-emoji-v53-emoji-300.woff2') format('woff2');
+  font-family: "Noto Emoji";
+  src: url("/fonts/noto-emoji/noto-emoji-v53-emoji-300.woff2") format("woff2");
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  unicode-range:
-     U+1F300-1F5FF,
-     U+1F600-1F64F,
-     U+1F680-1F6FF,
-     U+1F700-1F77F,
-     U+1F780-1F7FF,
-     U+1F800-1F8FF,
-     U+1F900-1F9FF,
-     U+1FA00-1FA6F,
-     U+1FA70-1FAFF,
-     U+2600-26FF,
-     U+2700-27BF,
-     U+FE00-FE0F,
-     U+1F1E6-1F1FF;
+  unicode-range: U+1F300-1F5FF, U+1F600-1F64F, U+1F680-1F6FF, U+1F700-1F77F,
+    U+1F780-1F7FF, U+1F800-1F8FF, U+1F900-1F9FF, U+1FA00-1FA6F, U+1FA70-1FAFF,
+    U+2600-26FF, U+2700-27BF, U+FE00-FE0F, U+1F1E6-1F1FF;
 }
 
-
 // -------------- THEME SWITCHER -------------- //
-@mixin theme($--bg-color, $--primary-text-color, $--secondary-text-color, $--link-color, $--visited-link-color, $--highlight) {
+@mixin theme(
+  $--bg-color,
+  $--primary-text-color,
+  $--secondary-text-color,
+  $--link-color,
+  $--visited-link-color,
+  $--highlight,
+  $--sidenote-number-color,
+  $--theorem-background-color,
+  $--theorem-color,
+  $--lemma-color,
+  $--definition-color,
+  $--corollary-color,
+  $--proposition-color
+) {
   background-color: $--bg-color;
 
   color: $--primary-text-color;
 
   a {
     color: $--link-color;
-    &:visited { color: $--visited-link-color; }
+    &:visited {
+      color: $--visited-link-color;
+    }
   }
 
   details {
@@ -102,9 +104,11 @@
   *:target {
     background: $--highlight;
     color: $--primary-text-color;
-   }
+  }
 
-  table, th, td {
+  table,
+  th,
+  td {
     border: thin solid $--primary-text-color;
   }
 
@@ -113,53 +117,148 @@
     padding: 1rem;
   }
 
-  figcaption { color: $--secondary-text-color; }
+  figcaption {
+    color: $--secondary-text-color;
+  }
 
   blockquote {
     border: thin solid $--primary-text-color;
+  }
+
+  // Sidenote colors
+  .sidenote-number::after {
+    color: $--sidenote-number-color;
+  }
+  .sidenote::before {
+    color: $--sidenote-number-color;
+  }
+  @media screen and (max-width: 760px) {
+    .sidenote {
+      border: 1px solid $--sidenote-number-color;
+    }
+  }
+
+  // Theorem colors
+  .theorem-env.theorem {
+    background-color: $--theorem-background-color;
+    border-left-color: $--theorem-color;
+    .theorem-type {
+      color: $--theorem-color;
+    }
+  }
+
+  .theorem-env.lemma {
+    background-color: $--theorem-background-color;
+    border-left-color: $--lemma-color;
+    .theorem-type {
+      color: $--lemma-color;
+    }
+  }
+
+  .theorem-env.definition {
+    background-color: $--theorem-background-color;
+    border-left-color: $--definition-color;
+    .theorem-type {
+      color: $--definition-color;
+    }
+  }
+
+  .theorem-env.corollary {
+    background-color: $--theorem-background-color;
+    border-left-color: $--corollary-color;
+    .theorem-type {
+      color: $--corollary-color;
+    }
+  }
+
+  .theorem-env.proposition {
+    background-color: $--theorem-background-color;
+    border-left-color: $--proposition-color;
+    .theorem-type {
+      color: $--proposition-color;
+    }
   }
 }
 
 @mixin dark-appearance {
   @include theme(
-    #111217,
+    #222530,
+    // bg color
     #e0e0e0,
+    // primary text color
     #2c2f36,
     #6c8edc,
     #d87bb4,
-    #3a3f4e
+    #3a3f4e,
+    #6c8edc,
+    // sidenote number color
+    #565d7d1f,
+    // theorem bg (dark)
+    #698ec3,
+    // theorem border
+    #ff7f7f,
+    // lemma border
+    #87d787,
+    // definition border
+    #e0b460,
+    // corollary border
+    #c79eff // proposition border
   );
 }
 
 @mixin light-appearance {
   @include theme(
     #fefcf0,
+    // bg color
     #1e1e1e,
+    // primary text color
     #777777,
     #4b63b8,
     #a0507a,
-    #e4e8ec
+    #e4e8ec,
+    #f60098,
+    // sidenote number color
+    #efefef80,
+    // theorem bg (light)
+    #d33f49,
+    // theorem border
+    #4b63b8,
+    // lemma border
+    #22863a,
+    // definition border
+    #c18401,
+    // corollary border
+    #6f42c1 // proposition border
   );
 }
 
-
-body[a="dark"] { @include dark-appearance; }
-body[a="light"] { @include light-appearance; }
+body[a="dark"] {
+  @include dark-appearance;
+}
+body[a="light"] {
+  @include light-appearance;
+}
 
 @media (prefers-color-scheme: dark) {
-  body[a="auto"] { @include dark-appearance; }
+  body[a="auto"] {
+    @include dark-appearance;
+  }
 }
 
 @media (prefers-color-scheme: light) {
-  body[a="auto"] { @include light-appearance; }
+  body[a="auto"] {
+    @include light-appearance;
+  }
 }
 
 // -------------------------------------------- //
 
-html { height: 100%; }
+html {
+  height: 100%;
+}
 
 body {
-  font-family: 'Noto Emoji', 'Cairo', 'et-book', serif;
+  font-family: "Noto Emoji", "Cairo", "et-book", serif;
   font-size: 22px;
   line-height: 1.4;
   margin: 0;
@@ -168,19 +267,30 @@ body {
   counter-reset: sidenote-counter;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 1.5rem;
   font-weight: bold;
   line-height: 1.2;
 }
 
-p { margin: 1.4rem 0; }
+p {
+  margin: 1.4rem 0;
+}
 
-li { margin: 0.4rem 0; }
+li {
+  margin: 0.4rem 0;
+}
 
 a {
   text-decoration: none;
-  &:hover { text-decoration: underline; }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 hr {
@@ -188,8 +298,12 @@ hr {
   border: 0;
   margin: 2rem 0;
 
-  &:before { content: '/////' }
-  &:after { content: attr(data-content) '/////' }
+  &:before {
+    content: "/////";
+  }
+  &:after {
+    content: attr(data-content) "/////";
+  }
 }
 
 pre {
@@ -197,9 +311,13 @@ pre {
   overflow-x: auto; /* Fix pre content overflowing parent without scroll bar */
 }
 
-table { width: 100%; }
+table {
+  width: 100%;
+}
 
-table, th, td {
+table,
+th,
+td {
   border-collapse: collapse;
   padding: 0.4rem;
 }
@@ -226,7 +344,9 @@ code.has-jax {
 blockquote {
   padding: 1rem;
 
-  p { margin: 0; }
+  p {
+    margin: 0;
+  }
 }
 
 img {
@@ -272,7 +392,9 @@ details[open] summary {
   text-align: justify;
 }
 
-// --------------------- Math Styling --------------------- //
+/* ======================================================================== */
+/* Math Styling                                                             */
+/* ======================================================================== */
 
 mjx-container[display="true"] {
   overflow-x: auto;
@@ -286,35 +408,38 @@ mjx-container[display="true"] > svg {
   height: auto !important;
 }
 
-// ------------------- Sidenotes ------------------------ //
+/* ======================================================================== */
+/* SIDENOTES                                                                */
+/* ======================================================================== */
 
 .sidenote-wrapper {
   display: inline;
-  margin: 0rem 0rem 0rem 0rem;
-  padding: 0rem 0rem 0rem 0rem;
+  margin: 0rem;
+  padding: 0rem;
   counter-increment: sidenote-counter;
 }
 
 .sidenote-number::after {
-  content: counter(sidenote-counter);
+  content: "[" counter(sidenote-counter) "]";
   font-size: 0.75em;
   vertical-align: top;
 }
 
 .sidenote {
+  width: 45%;
   float: right;
   clear: right;
-  width: 45%;
-  font-size: 1.15rem;
-  line-height: 1.4;
   position: relative;
   margin: 0rem -65% 0rem 0rem;
+  font-size: 16px;
+  padding: 1rem;
 }
 
-.sidenote:before {
-  content: counter(sidenote-counter) ". ";
-  font-weight: bold;
-  font-size: 1.15rem;
+.sidenote::before {
+  content: "[" counter(sidenote-counter) "]";
+  font-weight: 600;
+}
+
 /* ======================================================================== */
 /* THEOREM AND PROOF ENVIRONMENTS                                           */
 /* ======================================================================== */

@@ -59,9 +59,9 @@
   $--primary-text-color,
   $--secondary-text-color,
   $--link-color,
-  $--visited-link-color,
   $--highlight,
   $--sidenote-number-color,
+  $--proof-toggle,
   $--theorem-background-color,
   $--theorem-color,
   $--lemma-color,
@@ -75,8 +75,11 @@
 
   a {
     color: $--link-color;
-    &:visited {
-      color: $--visited-link-color;
+    text-decoration: none;
+
+    &:hover {
+      color: darken($--link-color, 10%);
+      text-decoration: none;
     }
   }
 
@@ -178,6 +181,17 @@
       color: $--proposition-color;
     }
   }
+
+  // Proof environment
+  .proof-text {
+    color: $--proof-toggle;
+    &:hover {
+      color: darken($--proof-toggle, 10%);
+    }
+  }
+  .arrow {
+    color: $--proof-toggle;
+  }
 }
 
 @mixin dark-appearance {
@@ -190,12 +204,12 @@
     // secondary text color
     #6c8edc,
     // link color
-    #d87bb4,
-    // visited link color
     #3a3f4e,
     // highlight color
     #6c8edc,
     // sidenote number color
+    #2aa198,
+    // proof toggle
     #565d7d1f,
     // theorem bg (dark)
     #698ec3,
@@ -220,12 +234,12 @@
     // secondary text color
     #4b63b8,
     // link color
-    #a0507a,
-    // visited link color
     #e4e8ec,
     // highlight color
     #f60098,
     // sidenote number color
+    #2aa198,
+    // proof toggle
     #efefef80,
     // theorem bg (light)
     #d33f49,
@@ -449,7 +463,7 @@ mjx-container[display="true"] > svg {
 }
 
 /* ======================================================================== */
-/* THEOREM AND PROOF ENVIRONMENTS                                           */
+/* THEOREM ENVIRONMENT                                                      */
 /* ======================================================================== */
 
 .theorem-env {
@@ -457,7 +471,6 @@ mjx-container[display="true"] > svg {
   margin: 1rem 0rem 1rem;
   padding: 0.5rem 1rem 0.5rem;
   border-left: 2px solid;
-  font-size: 20px;
 
   .theorem-head {
     margin-bottom: 0.4rem;
@@ -483,6 +496,40 @@ mjx-container[display="true"] > svg {
       margin: 0rem;
     }
   }
+}
+
+/* ======================================================================== */
+/* PROOF ENVIRONMENT                                                        */
+/* ======================================================================== */
+
+.proof-container {
+  width: 100%;
+}
+
+.proof-toggle {
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.proof-text {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.arrow {
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: baseline;
+  transition: transform 0.2s ease;
+}
+
+/* Transition section */
+.proof-content {
+  transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s ease;
+  margin-top: 0;
+  opacity: 0;
+  overflow: hidden;
 }
 
 /* ======================================================================== */

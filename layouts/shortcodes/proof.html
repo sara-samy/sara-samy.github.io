@@ -1,27 +1,40 @@
 <div class="proof-container">
-  <div class="proof-toggle" onclick="toggleProof(this)">
-    <span class="arrow">▶</span>
-    <span class="proof-text">Show proof</span>
+  <div class="proof-toggle">
+    <span class="arrow">꩜</span>
+    <span class="proof-text">Show proof.</span>
   </div>
-  <div class="proof-content">
-    {{ .Inner | markdownify }}
-  </div>
+  <div class="proof-content">{{ .Inner | markdownify }}</div>
 </div>
-<!-- proof toggle -->
+
 <script>
-  function toggleProof(element) {
-    const container = element.closest('.proof-container');
-    const proofContent = element.querySelector('.proof-content') || element.nextElementSibling;
-    const proofText = element.querySelector('.proof-text');
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".proof-container").forEach((container) => {
+      const toggle = container.querySelector(".proof-toggle");
+      const proofContent = container.querySelector(".proof-content");
+      const proofText = toggle.querySelector(".proof-text");
+      const arrow = toggle.querySelector(".arrow");
 
-    container.classList.toggle('active');
-    const isActive = container.classList.contains('active');
+      // Initially hidden
+      proofContent.style.maxHeight = "0px";
+      proofContent.style.overflow = "hidden";
+      proofContent.style.opacity = 0;
 
-    proofContent.style.display = isActive ? 'block' : 'none';
-    proofText.textContent = isActive ? 'Hide proof' : 'Show proof';
+      toggle.addEventListener("click", () => {
+        const isExpanded = proofContent.classList.toggle("visible");
 
-    // Rotate arrow
-    const arrow = element.querySelector('.arrow');
-    arrow.style.transform = isActive ? 'rotate(90deg)' : 'rotate(0)';
-  }
+        if (isExpanded) {
+          proofContent.style.maxHeight = proofContent.scrollHeight + "px";
+          proofContent.style.opacity = 1;
+          proofText.textContent = "Hide proof.";
+          arrow.style.transform = "rotate(90deg)";
+        } else {
+          proofContent.style.maxHeight = "0px";
+          proofContent.style.opacity = 0;
+          proofText.textContent = "Show proof.";
+          arrow.style.transform = "rotate(0deg)";
+        }
+      });
+    });
+  });
 </script>
+

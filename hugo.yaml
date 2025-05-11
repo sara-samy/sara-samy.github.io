@@ -17,3 +17,9 @@ ignoreFiles:
   - \.obsidian/.*
   - content/_obsidian-templates/.*
 
+markup:
+  highlight:
+    lineNos: true
+    noClasses: false
+    guessSyntax: true
+    lineNumbersInTable: false

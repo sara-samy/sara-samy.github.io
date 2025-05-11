@@ -335,6 +335,13 @@ td {
   padding: 0.4rem;
 }
 
+pre,
+code {
+  tab-size: 4;
+  -o-tab-size: 4; /* For Opera compatibility */
+  -moz-tab-size: 4; /* For Firefox compatibility */
+}
+
 code {
   text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;

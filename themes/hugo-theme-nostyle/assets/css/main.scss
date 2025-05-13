@@ -74,6 +74,10 @@
 
   color: $--primary-text-color;
 
+  figure p {
+    color: $--primary-text-color;
+  }
+
   a {
     color: $--link-color;
     text-decoration: none;

@@ -454,7 +454,7 @@ mjx-container[display="true"] > svg {
 .sidenote-number::after {
   content: counter(sidenote-counter);
   font-weight: 800;
-  font-size: 0.70em;
+  font-size: 0.7em;
   vertical-align: top;
 }
 
@@ -488,7 +488,7 @@ mjx-container[display="true"] > svg {
 /* ======================================================================== */
 
 .theorem-env {
-  width: 96%;
+  width: 95.5%;
   margin: 1rem 0rem 1rem;
   padding: 0.5rem 1rem 0.5rem;
   border-left: 2px solid;

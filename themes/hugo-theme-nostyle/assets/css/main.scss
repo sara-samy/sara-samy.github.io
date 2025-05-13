@@ -67,7 +67,8 @@
   $--lemma-color,
   $--definition-color,
   $--corollary-color,
-  $--proposition-color
+  $--proposition-color,
+  $--inline-code
 ) {
   background-color: $--bg-color;
 
@@ -119,6 +120,10 @@
     border: thin solid $--primary-text-color;
   }
 
+  // inline code
+  code:not(pre > code) {
+    color: $--inline-code;
+  }
   // Sidenote colors
   .sidenote-number::after {
     color: $--sidenote-number-color;
@@ -197,21 +202,23 @@
     // link color
     #3a3f4e,
     // highlight color
-    #6c8edc,
+    #d08770,
     // sidenote number color
     #2aa198,
     // proof toggle
-    #565d7d1f,
+    #2d33456f,
     // theorem bg (dark)
-    #698ec3,
+    #6c8edc,
     // theorem border
-    #ff7f7f,
+    #a3be8c,
     // lemma border
-    #87d787,
+    #ebcb8b,
     // definition border
-    #e0b460,
+    #b48ead,
     // corollary border
-    #c79eff // proposition border
+    #88c0d0,
+    // proposition border
+    #97c279 // inline-code color
   );
 }
 
@@ -227,7 +234,7 @@
     // link color
     #e4e8ec,
     // highlight color
-    #f60098,
+    #d33f49,
     // sidenote number color
     #2aa198,
     // proof toggle
@@ -241,7 +248,9 @@
     // definition border
     #c18401,
     // corollary border
-    #6f42c1 // proposition border
+    #6f42c1,
+    // proposition border
+    #0b1007 // inline-code color
   );
 }
 
@@ -320,7 +329,9 @@ hr {
 }
 
 pre {
-  padding: 1em;
+  width: 100%;
+  padding: 1em 0em;
+  font-size: 16px;
   overflow-x: auto; /* Fix pre content overflowing parent without scroll bar */
 }
 
@@ -350,8 +361,9 @@ code {
 }
 
 code:not(pre > code) {
-  padding: 0.1em 0.2em;
-  font-size: 90%;
+  padding: 0.1em;
+  font-size: 75%;
+  font-weight: 600;
 }
 
 code.has-jax {

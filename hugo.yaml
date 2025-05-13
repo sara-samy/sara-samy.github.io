@@ -7,7 +7,7 @@ title: "sara-samy.github.io"
 params:
   theme_config:
     appearance: "auto"
-    back_home_text: "🦎..."
+    back_home_text: "🦎"
     date_format: "01-02-2006"
     isListGroupByDate: false
     isShowFooter: true

@@ -423,8 +423,8 @@ details[open] summary {
 
 .w {
   max-width: 55%;
-  margin: 0 0 0 0;
-  padding: 0rem 1rem 0rem 1rem;
+  margin: 0 2rem 0 2rem;
+  padding: 0 2rem 0 2rem;
   text-align: justify;
 }
 
@@ -558,6 +558,16 @@ mjx-container[display="true"] > svg {
 }
 
 /* ======================================================================== */
+/* BACK LINK                                                                */
+/* ======================================================================== */
+
+.back-link {
+  margin: 0.5rem 0rem 0rem -3rem;
+  position: sticky;
+  top: 20px;
+}
+
+/* ======================================================================== */
 /* MOBILE RESPONSIVENESS                                                    */
 /* ======================================================================== */
 
@@ -609,5 +619,11 @@ mjx-container[display="true"] > svg {
   // ----------- Theorem ------------ //
   .theorem-env {
     clear: both;
+  }
+
+  // --------- Back link ------------ //
+  .back-link-content {
+    margin: 0.5rem 0rem 0rem 0rem;
+    position: static;
   }
 }

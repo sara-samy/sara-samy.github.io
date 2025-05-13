@@ -440,8 +440,9 @@ mjx-container[display="true"] > svg {
 }
 
 .sidenote-number::after {
-  content: "[" counter(sidenote-counter) "]";
-  font-size: 0.75em;
+  content: counter(sidenote-counter);
+  font-weight: 800;
+  font-size: 0.70em;
   vertical-align: top;
 }
 
@@ -456,8 +457,18 @@ mjx-container[display="true"] > svg {
 }
 
 .sidenote::before {
-  content: "[" counter(sidenote-counter) "]";
-  font-weight: 600;
+  content: counter(sidenote-counter);
+  font-weight: 800;
+  font-size: 0.85em;
+  vertical-align: super;
+}
+
+// Make images in sidenotes behave
+.sidenote img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 0.5rem;
 }
 
 /* ======================================================================== */

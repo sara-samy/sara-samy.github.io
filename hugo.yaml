@@ -5,6 +5,12 @@ baseurl: "https://sara-samy.github.io/"
 title: "sara-samy.github.io"
 
 params:
+  theme_config:
+    appearance: "auto"
+    back_home_text: "🦎..."
+    date_format: "01-02-2006"
+    isListGroupByDate: false
+    isShowFooter: true
   plausible:
     enable: true
     debug: false
@@ -23,3 +29,7 @@ markup:
     noClasses: false
     guessSyntax: true
     lineNumbersInTable: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+    ordered: false

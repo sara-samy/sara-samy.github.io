@@ -61,7 +61,6 @@
   $--link-color,
   $--highlight,
   $--sidenote-number-color,
-  $--proof-toggle,
   $--theorem-background-color,
   $--theorem-color,
   $--lemma-color,
@@ -89,7 +88,7 @@
   }
 
   details {
-    border: thin solid $--primary-text-color;
+    border: 1px solid $--primary-text-color;
   }
 
   details summary {
@@ -128,6 +127,7 @@
   code:not(pre > code) {
     color: $--inline-code;
   }
+
   // Sidenote colors
   .sidenote-number::after {
     color: $--sidenote-number-color;
@@ -181,17 +181,6 @@
       color: $--proposition-color;
     }
   }
-
-  // Proof environment
-  .proof-text {
-    color: $--proof-toggle;
-    &:hover {
-      color: darken($--proof-toggle, 10%);
-    }
-  }
-  .arrow {
-    color: $--proof-toggle;
-  }
 }
 
 @mixin dark-appearance {
@@ -208,8 +197,6 @@
     // highlight color
     #d08770,
     // sidenote number color
-    #2aa198,
-    // proof toggle
     #2d33456f,
     // theorem bg (dark)
     #6c8edc,
@@ -240,8 +227,6 @@
     // highlight color
     #d33f49,
     // sidenote number color
-    #2aa198,
-    // proof toggle
     #efefef80,
     // theorem bg (light)
     #d33f49,
@@ -397,7 +382,19 @@ figcaption {
 }
 
 details {
-  padding: 1rem;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  font-style: italic;
+  font-weight: 600;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
 }
 
 details summary {
@@ -524,40 +521,6 @@ mjx-container[display="true"] > svg {
 }
 
 /* ======================================================================== */
-/* PROOF ENVIRONMENT                                                        */
-/* ======================================================================== */
-
-.proof-container {
-  width: 100%;
-}
-
-.proof-toggle {
-  padding-bottom: 0.5rem;
-  cursor: pointer;
-  user-select: none;
-}
-
-.proof-text {
-  font-style: italic;
-  font-weight: 600;
-}
-
-.arrow {
-  font-size: 18px;
-  display: inline-block;
-  vertical-align: baseline;
-  transition: transform 0.2s ease;
-}
-
-/* Transition section */
-.proof-content {
-  transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s ease;
-  margin-top: 0;
-  opacity: 0;
-  overflow: hidden;
-}
-
-/* ======================================================================== */
 /* BACK LINK                                                                */
 /* ======================================================================== */
 
@@ -619,6 +582,11 @@ mjx-container[display="true"] > svg {
   // ----------- Theorem ------------ //
   .theorem-env {
     clear: both;
+  }
+
+  // ---------- Details ------------- //
+  details {
+    margin: 1rem -0.5rem 1rem;
   }
 
   // --------- Back link ------------ //

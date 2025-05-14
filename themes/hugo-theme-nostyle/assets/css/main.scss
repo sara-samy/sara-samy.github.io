@@ -457,6 +457,7 @@ mjx-container[display="true"] > svg {
   font-weight: 800;
   font-size: 0.7em;
   vertical-align: top;
+  cursor: default;
 }
 
 .sidenote {
@@ -474,6 +475,7 @@ mjx-container[display="true"] > svg {
   font-weight: 800;
   font-size: 0.85em;
   vertical-align: super;
+  text-decoration: none;
 }
 
 // Make images in sidenotes behave
@@ -564,6 +566,10 @@ mjx-container[display="true"] > svg {
     content: counter(sidenote-counter);
     text-decoration: underline;
     vertical-align: super;
+  }
+
+  .sidenote::before {
+    text-decoration: underline;
   }
 
   .sidenote {

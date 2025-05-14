@@ -1,3 +1,3 @@
-{{< proof >}}
+{{< details summary="Show Proof." >}}
 
-{{< /proof >}}
+{{< /details >}}

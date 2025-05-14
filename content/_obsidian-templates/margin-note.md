@@ -1,1 +1,0 @@
-{{< marginnote ind="⊕" >}}This is a margin note. Notice there isn’t a number preceding the note.{{< /marginnote >}}

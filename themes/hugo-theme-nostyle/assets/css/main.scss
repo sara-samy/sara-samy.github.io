@@ -60,6 +60,7 @@
   $--secondary-text-color,
   $--link-color,
   $--highlight,
+  $--hr-color,
   $--sidenote-number-color,
   $--theorem-background-color,
   $--theorem-color,
@@ -104,6 +105,9 @@
     color: $--primary-text-color;
   }
 
+  hr {
+    border: 0.5px solid $--hr-color;
+  }
   table,
   th,
   td {
@@ -195,6 +199,8 @@
     // link color
     #3a3f4e,
     // highlight color
+    #e0e0e07f,
+    // hr color
     #d08770,
     // sidenote number color
     #2d33456f,
@@ -225,6 +231,8 @@
     // link color
     #e4e8ec,
     // highlight color
+    #1e1e1e4f,
+    // hr color
     #d33f49,
     // sidenote number color
     #efefef80,
@@ -306,15 +314,7 @@ a {
 
 hr {
   text-align: center;
-  border: 0;
   margin: 2rem 0;
-
-  &:before {
-    content: "/////";
-  }
-  &:after {
-    content: attr(data-content) "/////";
-  }
 }
 
 pre {

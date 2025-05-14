@@ -32,7 +32,7 @@ $$
 \sigma(A) \subseteq \bigcup_{i=1}^{\ \ n} D_{i}(A)
 $$
 {{< /theorem >}}
-{{< proof >}}
+{{< details summary="Show Proof." >}}
 Let $\lambda$ be an eigenvalue of $A$ with eigenvector $v \in \mathbb{C}^n$. Since $v \neq 0$ we must have
 $$
 0 < \lvert v_{k} \rvert = \max\\{ \lvert v_{i} \rvert \ : \ i=1,\dots,n \\} = \lVert v \rVert_{1}
@@ -49,8 +49,8 @@ Taking the absolute values in the above equation and using the triangle inequali
 $$
 \left\lvert \lambda - a_{kk} \right\rvert \lvert v_{k} \rvert = \left\lvert \sum_{j \neq k} a_{kj} v_{j} \right\rvert \leq \sum_{j \neq k} \lvert a_{kj} v_{j} \rvert \leq \lvert v_{k} \rvert \sum_{j \neq k} \lvert a_{kj} \rvert = \lvert v_{k}  \rvert r_{k}(A)
 $$
-Dividing by $\lvert v_{k} \rvert$ gives $\lvert \lambda - a_{kk} \rvert \leq r_{k}(A)$. <font style="" size="1.9rem">■</font>
-{{< /proof >}}
+Dividing by $\lvert v_{k} \rvert$ gives $\lvert \lambda - a_{kk} \rvert \leq r_{k}(A)$.
+{{< /details >}}
 
 If we construct a family of matrices where the diagonal entries (which determine the centers of the circles) and the off-diagonal entries (which determine the radii) vary smoothly, we can use Gershgorin's theorem to create some pretty plots!
 

@@ -1,12 +1,8 @@
 <ul>
     {{- range $item := .collection -}}
-        <li>
             {{- with $item.url -}}
                 <a href="{{ $item.url | relURL }}">{{ safeHTML $item.title }}</a>
-            {{- else -}}
-                {{ safeHTML $item.title }}
             {{- end -}}
-        </li>
 
         {{- if $item.entries }}
             {{ partial "menu_item.html" (dict "context" . "collection" $item.entries) }}

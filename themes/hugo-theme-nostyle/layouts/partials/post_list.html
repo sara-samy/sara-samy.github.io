@@ -25,7 +25,6 @@
     {{- if .limit }}
         {{ $posts = (first .limit $posts ) }}
     {{ end }}
-    <ul>
         {{- range $post := $posts -}}
         <li>
             <span>{{- ($post.Date | time.Format site.Params.theme_config.date_format) }}</span>
@@ -35,5 +34,4 @@
         {{- if and .show_more $limit_exceeded }}
             <li><a href="{{ .show_more_url | relURL }}">{{ .show_more_text | default "Show more..." }}</a></li>
         {{ end }}
-    </ul>
 {{ end }}

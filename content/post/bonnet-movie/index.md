@@ -3,6 +3,8 @@ title: "Solving the Bonnet problem - A hands-on adventure in 17 chapters"
 date: 2024-02-15T20:49:43+01:00
 mathjax: true
 draft: false
+featured_image: img/hudhud.png
+image_alt: hudhud
 ---
 
 This page showcases the animations produced for the movie _Solving the Bonnet problem (2023)_, directed by [Ekaterina Eremenko](https://page.math.tu-berlin.de/~eremenko/). You can watch the trailer [here](https://www.youtube.com/watch?v=iQvsKbw-ksg).

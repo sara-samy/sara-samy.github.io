@@ -1,8 +1,11 @@
 ---
 title: Gershgorin and his circles
 date: 2025-04-25
+show_date: true
 draft: false
 mathjax: true
+featured_image: img/read.jpg
+image_alt: alt
 ---
 
 A theorem I love from linear algebra is the _Gershgorin circle theorem_ which relates the spectrum of a $n \times n$ complex matrix to $n$ disks in the complex plane. Given $A \in \mathbb{C}^{n \times n}$ with spectrum{{< sidenote >}}A complex number $\lambda \in \mathbb{C}$ is an eigenvalue of $A$ if and only if there exists $v \in \mathbb{C}^{n}$ with $v \neq 0$ such that

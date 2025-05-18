@@ -1,0 +1,13 @@
+{{- $d := .Get "d" | default "" -}}
+{{- $width := .Get "width" | default "1em" -}}
+{{- $height := .Get "height" | default "1em" -}}
+{{- $viewBox := .Get "viewBox" | default "0 0 24 24" -}}
+
+<span class="icon">
+	<svg xmlns="http://www.w3.org/2000/svg" 
+  	viewBox="{{ $viewBox }}"
+  	{{ with $width }}width="{{ . }}"{{ end }}
+  	{{ with $height }}height="{{ . }}"{{ end }}>
+  	<path d="{{ $d }}">
+	</svg>
+</span>

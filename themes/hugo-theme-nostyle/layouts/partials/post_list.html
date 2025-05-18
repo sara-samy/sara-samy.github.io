@@ -25,11 +25,15 @@
     {{- if .limit }}
         {{ $posts = (first .limit $posts ) }}
     {{ end }}
-        {{- range $post := $posts -}}
-        <li>
-            <span>{{- ($post.Date | time.Format site.Params.theme_config.date_format) }}</span>
-            <a href="{{ $post.Permalink | relURL }}">{{ $post.Title }}</a>
-        </li>
+        {{- range $post := where $posts "Params.exclude_from_listing" "ne" true -}}
+        <div class="hover-wrapper">
+            <li class="hover-container">
+                <a href="{{ $post.Permalink | relURL }}" class="hover-link">{{ $post.Title }}</a>
+            </li>
+            {{- with $post.Params.featured_image }}
+                <img src="{{ . }}" alt="{{ $post.Params.image_alt | default "post image" }}" class="post-image">
+            {{- end }}
+        </div>
         {{ end }}
         {{- if and .show_more $limit_exceeded }}
             <li><a href="{{ .show_more_url | relURL }}">{{ .show_more_text | default "Show more..." }}</a></li>

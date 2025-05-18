@@ -78,6 +78,12 @@
     color: $--primary-text-color;
   }
 
+  .icon {
+    svg {
+      fill: $--primary-text-color;
+    }
+  }
+
   a {
     color: $--link-color;
     text-decoration: none;
@@ -416,7 +422,9 @@ details[open] summary {
   padding: 1rem;
 }
 
-// ---------------- Content Layout ------------------------ //
+/* ======================================================================== */
+/* Content Layout                                                           */
+/* ======================================================================== */
 
 .w {
   max-width: 55%;

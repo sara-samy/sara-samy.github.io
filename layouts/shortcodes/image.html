@@ -1,0 +1,7 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $type := .Get "type" | default "" -}}
+
+<figure class="{{ $type }}">
+  <img src="{{ $src | relURL }}" alt="{{ $alt | htmlEscape }}">
+</figure>

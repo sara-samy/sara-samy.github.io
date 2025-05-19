@@ -474,15 +474,13 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  max-width: 768px;
   margin-top: 10px;
-  width: 100%;
 }
 
 .icon {
   svg {
-    margin-right: 0.3em;
-    margin-left: 0.3em;
+    margin-right: 0.1em;
+    margin-left: 0.1em;
     vertical-align: text-top;
   }
 }

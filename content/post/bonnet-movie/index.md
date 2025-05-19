@@ -1,6 +1,7 @@
 ---
 title: "Solving the Bonnet problem - A hands-on adventure in 17 chapters"
 date: 2024-02-15T20:49:43+01:00
+show_date: true
 mathjax: true
 draft: false
 featured_image: img/hudhud.png

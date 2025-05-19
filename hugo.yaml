@@ -2,9 +2,10 @@ title: "Blog posts"
 languageCode: "en-us"
 theme: ["hugo-theme-nostyle", "plausible-hugo"]
 baseurl: "https://sara-samy.github.io/"
-title: "sara-samy.github.io"
+title: "Sara Samy - Blog"
 
 params:
+  copyright-year: "2025"
   theme_config:
     appearance: "auto"
     back_home_text: "ε"

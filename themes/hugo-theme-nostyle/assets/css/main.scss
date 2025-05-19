@@ -485,6 +485,8 @@ nav {
   }
 }
 
+// ------------ Hover ------------ //
+
 .hover-wrapper {
   position: relative;
   display: block;
@@ -495,15 +497,7 @@ nav {
 }
 
 .hover-wrapper:hover .post-image {
-  display: block;
-  position: fixed;
-  top: 280px; /* Adjust as needed */
-  right: 180px; /* Adjust as needed */
-  width: 300px; /* Adjust image size */
-  height: 200px; /* Adjust image size */
-  padding: 0rem;
-  z-index: 1000;
-  border: 0px solid #ccc; /* Optional */
+  display: none;
 }
 
 /* ======================================================================== */

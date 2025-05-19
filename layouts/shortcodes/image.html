@@ -1,7 +1,14 @@
 {{- $src := .Get "src" -}}
+{{- $link := .Get "link" -}}
 {{- $alt := .Get "alt" | default "" -}}
 {{- $type := .Get "type" | default "" -}}
 
 <figure class="{{ $type }}">
-  <img src="{{ $src | relURL }}" alt="{{ $alt | htmlEscape }}">
+  {{ if $link }}
+    <a href="{{ $link }}">
+      <img src="{{ $src | relURL }}" alt="{{ $alt | htmlEscape }}">
+    </a>
+  {{ else }}
+    <img src="{{ $src | relURL }}" alt="{{ $alt | htmlEscape }}">
+  {{ end }}
 </figure>

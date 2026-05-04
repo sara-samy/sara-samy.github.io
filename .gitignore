@@ -3,3 +3,5 @@ resources/_gen/
 resources/_gen/assets/scss/
 # MacOS
 *.DS_Store
+# obsidian
+content/.obsidian/
